@@ -5,38 +5,93 @@
  *
  */ 
 $passKeys = array('fsr001', 'fsr002', 'fsr003', 'fsr004', 'fsr005');
+$savedKey = ( isset($_COOKIE["gatekey"]) ? $_COOKIE["gatekey"] : 'unknown' );
 
+if( !in_array($savedKey, $passKeys) ) { header('Location: ./'); }
 
-$passPhrase = 'fsr001'; 
-if(isset($_COOKIE["gatekey"])) {
-    $savedKey = $_COOKIE["gatekey"];
-} else{
-    $savedKey = 'unknown';
-}
-
-if( !in_array($savedKey, $passKeys) ) {
-		header('Location: /egw-gate/');
-	}
-
-
-
+include 'contentchooser.php'; // REQUIRED FOR ALL LOCATION VARIABLE CONTENT 
 $pageTitle = 'Products - First Service Residential';
+
 ?>
-<?php include 'header.php';?>
-	<div class="grid-container">
-		<div class="grid-x grid-margin-x">
-			<h1>Products</h1>
+<?php include 'header.php'; ?>
+
+	<div class="grid-container content">
+		<div class="grid-y grid-padding-y">
+			<div class="cell">
+				<div class="grid-x grid-padding-x">
+					<div class="cell medium-6">
+						<div class="responsive-embed"><iframe width="560" height="315" src="https://www.youtube.com/embed/uilkmUoXoLU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+					</div>
+					<div class="cell medium-6">
+						<h2>Daily Feature Program</h2>
+						<h4>Sit And Get Fit</h4>
+						<p>Brief Item Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacus odio, accumsan id ullamcorper eget, varius nec erat. Nulla facilisi. Donec dui felis, euismod nec finibus vitae, dapibus quis arcu. Maecenas tempor et ipsum quis venenatis. Ut posuere sed augue sit amet efficitur.</p>
+					</div>
+				</div>
+			</div>
+			<div class="cell">
+				<div class="grid-x grid-padding-x">
+					<div class="cell">
+						<h2>Current Programs</h2>
+						<p>Ut aliquet efficitur ligula, a consectetur felis. Proin tristique ut augue nec luctus. Curabitur a sapien pretium, auctor elit a, efficitur erat. Donec tincidunt dui vel velit bibendum euismod. Cras vitae nibh dui. Aliquam erat volutpat. Etiam sit amet arcu a erat efficitur facilisis. Ut viverra dapibus turpis, et ornare justo. Integer in dui cursus, dignissim tortor a, hendrerit risus.</p>
+					</div>
+				</div>
+			</div>
+			<div class="cell">
+				<div class="grid-x grid-padding-x medium-up-2">
+					<div class="cell">
+						<div class="card">
+							<div class="card-section">
+								<img src="./images/baila-img01.png">
+								<h4>Baila!</h4>
+								<p>Dance your way to fitness. Baila!™ teaches the basics of popular Latin dances to make fitness fun!</p>
+								<p><a href="./baila"><button class="button">More Info</button></a></p>
+							</div>
+						</div>
+					</div>
+					<div class="cell">
+						<div class="card">
+							<div class="card-section">
+								<img src="http://satyr.io/720x16:9/?texture=cross">
+								<h4>Rock The Walk</h4>
+								<p>Get on the road to fitness with an easy, low-impact program set to classic rock music.</p>
+								<p><a href="./rock-the-walk"><button class="button">More Info</button></a></p>
+							</div>
+						</div>
+					</div>
+					<div class="cell">
+						<div class="card">
+							<div class="card-section">
+								<img src="http://satyr.io/720x16:9/?texture=cross">
+								<h4>Little Black Dress</h4>
+								<p>Brief Item Description</p>
+								<p><a href="./little-black-dress"><button class="button">More Info</button></a></p>
+							</div>
+						</div>
+					</div>
+					<div class="cell">
+						<div class="card">
+							<div class="card-section">
+								<img src="http://satyr.io/720x16:9/?texture=cross">
+								<h4>28 Day Challenge</h4>
+								<p>Brief Item Description</p>
+								<p><a href="./28-day"><button class="button">More Info</button></a></p>
+							</div>
+						</div>
+					</div>
+					<div class="cell">
+						<div class="card">
+							<div class="card-section">
+								<img src="http://satyr.io/720x16:9/?texture=cross">
+								<h4>Gentlemen, Restart Your Engines</h4>
+								<p>Brief Item Description</p>
+								<p><a href="./gentlemen"><button class="button">More Info</button></a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="grid-x grid-margin-x">This is the main body of the Products page</div>
-		<div class="grid-x grid-margin-x">This is the footer of the Products page</div>
-	
 	</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0-rc.2/dist/js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-
-  </body>
-</html>
+<?php include 'footer.php';?>

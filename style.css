@@ -1,0 +1,29 @@
+/*
+Theme Name: Gateway
+Author: The MIC Team
+Description: 
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+h1 { font-size: 2.75em; font-weight: bold; }
+.footer { padding: 1.5em 0; }
+.footer h3 { font-size:0.75em; }
+
+
+/* LOCATION STYLING - DEFAULT */
+body.gateway {}
+body.gateway h1, h2, h3, h4, h5 { color:#000; }
+body.gateway .header, body.gateway .footer { display:none; }
+
+/* LOCATION STYLING - FIRST SERVICE RESIDENTIAL */
+
+body.fsres { background-color:#57595b; }
+body.fsres .header { background-color:#57595b; }
+body.fsres .header img { padding:1em 0; }
+body.fsres .header h1 { color:#fff; }
+body.fsres .content h1, h2, h3, h4, h5 { color:#0099d2; }
+body.fsres .content { background-color:#57595b; color:#fff; }
+body.fsres .content img { width:100%; }
+body.fsres .footer { background-color:#333333; color:#fff; }
+body.fsres .footer h3 { color:#fff; }

@@ -5,34 +5,46 @@
  *
  */
 $passKeys = array('fsr001', 'fsr002', 'fsr003', 'fsr004', 'fsr005');
+$savedKey = ( isset($_COOKIE["gatekey"]) ? $_COOKIE["gatekey"] : 'unknown' );
 
-$passPhrase = 'fsr001'; 
-if(isset($_COOKIE["gatekey"])) {
-    $savedKey = $_COOKIE["gatekey"];
-} else{
-    $savedKey = 'unknown';
-}
-//if(isset($_POST['SubmitButton'])){
+if( in_array($savedKey, $passKeys) ) { header('Location: ./products'); }
+
 if( $_POST ) {
     $userKey = $_POST["passcode"];
-	if ( $userKey == $passPhrase ) {
-		header('Location: /egw-gate/products');
+	if ( ( $userKey == $savedKey ) ||  ( in_array($userKey, $passKeys) )  ) {
+		setcookie("gatekey", $userKey, 2147483647);
+		header('Location: ./products');
 	} else {
-		header('Location: /egw-gate/');
+		header('Location: ./');
 	}
 }
+
+include 'contentchooser.php'; // REQUIRED FOR ALL LOCATION VARIABLE CONTENT 
+$pageLocation = 'First Service'; 
 $pageTitle = 'GateKeeper - First Service Residential';
+
+//$request_uri = explode('?', $_SERVER['REQUEST_URI'], 2);
+//echo $request_uri[0];
+//var_dump($GLOBALS);
 ?>
 <?php include 'header.php';?>
 	<div class="grid-container">
-		<div class="grid-x grid-margin-x">
-			<h1>Welcome, </h1>
+		<div class="grid-y grid-frame align-center-middle text-center">
+			<div class="cell">
+				<div class="grid-x grid-padding-x">
+					<div class="cell small-10 medium-6 medium-offset-3"><h1>Welcome to ContentGate</h1></div>
+					<div class="cell small-10 medium-6 medium-offset-3">Please enter your <strong>passphrase</strong> to continue:</div>
+					<div class="cell small-10 medium-6 medium-offset-3">
+				        <form action="" method="post">
+				            <input type="text" name="passcode">
+				            <input type="submit" class="button" name="SubmitButton">
+				        </form>
+					</div>
+					<div class="cell small-10 medium-6 medium-offset-3">
+						<h5>Disclaimer - This site uses Cookies to remember your passphrase ONLY. Test Code=fsr001</h5>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="grid-x grid-margin-x">Welcome!</div>
-		<div class="grid-x grid-margin-x">Please enter your Passphrase to continue!</div>
-        <form action="" method="post">
-            <input type="text" name="passcode">
-            <input type="submit" name="SubmitButton">
-        </form>
 	</div>
 <?php include 'footer.php';?>
