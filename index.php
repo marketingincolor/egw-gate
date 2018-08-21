@@ -19,10 +19,10 @@ if( $_POST ) {
 	}
 }
 
-include 'contentchooser.php'; // REQUIRED FOR ALL LOCATION VARIABLE CONTENT 
+// REQUIRED FOR ALL LOCATION VARIABLE CONTENT 
+include 'contentchooser.php'; 
 $pageLocation = 'First Service'; 
 $pageTitle = 'GateKeeper - First Service Residential';
-
 //$request_uri = explode('?', $_SERVER['REQUEST_URI'], 2);
 //echo $request_uri[0];
 //var_dump($GLOBALS);

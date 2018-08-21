@@ -9,9 +9,9 @@ $savedKey = ( isset($_COOKIE["gatekey"]) ? $_COOKIE["gatekey"] : 'unknown' );
 
 if( !in_array($savedKey, $passKeys) ) { header('Location: ./'); }
 
-include 'contentchooser.php'; // REQUIRED FOR ALL LOCATION VARIABLE CONTENT 
+// REQUIRED FOR ALL LOCATION VARIABLE CONTENT 
+include 'contentchooser.php'; 
 $pageTitle = 'Products - First Service Residential';
-
 ?>
 <?php include 'header.php'; ?>
 

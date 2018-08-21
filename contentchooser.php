@@ -30,6 +30,13 @@ function selectData($selector) {
 				'logoPath' => './images/fsr-logo.svg', 
 				'companyName' => 'First Service Residential'
 			);
+		case 'fsr005' :
+			return array(
+				'master' => 'fsres',
+				'locationTitle' => 'Orlando', 
+				'logoPath' => './images/fsr-logo.svg', 
+				'companyName' => 'First Service Residential'
+			);
 		default :
 			return array(
 				'master' => 'gateway',
