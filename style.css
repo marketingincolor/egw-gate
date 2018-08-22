@@ -9,7 +9,7 @@ body, h1, h2, h3, h4, h5 { font-family: 'PT Sans', sans-serif; }
 h1 { font-size: 2.75em; font-weight: bold; }
 .footer { padding: 1.5em 0; }
 .footer h3 { font-size:0.75em; font-weight:normal; }
-
+.img-button { cursor:pointer; }
 /* LOCATION STYLING - DEFAULT */
 body.gateway {}
 body.gateway h1, h2, h3, h4, h5 { color:#000; font-weight:bold; }

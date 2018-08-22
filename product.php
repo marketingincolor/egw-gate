@@ -8,8 +8,20 @@ $passKeys = array('fsr001', 'fsr002', 'fsr003', 'fsr004', 'fsr005');
 $savedKey = ( isset($_COOKIE["gatekey"]) ? $_COOKIE["gatekey"] : 'unknown' );
 if( !in_array($savedKey, $passKeys) ) { header('Location: /egw-gate/products'); }
 
-include 'contentchooser.php'; // REQUIRED FOR ALL LOCATION VARIABLE CONTENT 
+// Connects display page to proper CSV file
+$fileHandle = fopen('./product.csv', 'r');
+
+// REQUIRED FOR ALL LOCATION VARIABLE CONTENT 
+include 'contentchooser.php';
 $pageTitle = 'Product One - '.$locationTitle;
+/**
+ * @TODO : VIMEO EMBED TO BE REVISED 
+ * See this code - https://github.com/vimeo/vimeo-oembed-examples/blob/master/oembed/php-example.php
+ * 
+ * Will have to redo all CSV file structures to change the URL to the correct way for the PHP embed 
+ * to work.
+ */
+
 ?>
 <?php include 'header.php';?>
 	<div class="grid-container content">
@@ -21,72 +33,37 @@ $pageTitle = 'Product One - '.$locationTitle;
 			<div class="cell">
 				<div class="grid-x grid-padding-x">
 					<div class="cell">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacus odio, accumsan id ullamcorper eget, varius nec erat. Nulla facilisi. Donec dui felis, euismod nec finibus vitae, dapibus quis arcu. Maecenas tempor et ipsum quis venenatis. Ut posuere sed augue sit amet efficitur. Sed imperdiet, justo id tempus rhoncus, est est viverra turpis, non vulputate magna lectus et nisl. Pellentesque ultrices porttitor vehicula. Ut aliquet efficitur ligula, a consectetur felis. Proin tristique ut augue nec luctus. Curabitur a sapien pretium, auctor elit a, efficitur erat. Donec tincidunt dui vel velit bibendum euismod. Cras vitae nibh dui. Aliquam erat volutpat. Etiam sit amet arcu a erat efficitur facilisis. Ut viverra dapibus turpis, et ornare justo. Integer in dui cursus, dignissim tortor a, hendrerit risus.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacus odio, accumsan id ullamcorper eget, varius nec erat. Nulla facilisi. Donec dui felis, euismod nec finibus vitae, dapibus quis arcu. Maecenas tempor et ipsum quis venenatis.</p>
 					</div>
 				</div>
 			</div>
 			<div class="cell">
-				<div class="grid-x grid-padding-x medium-up-3">
+				<div class="grid-x grid-padding-x medium-up-2 large-up-3">
+
+				<?php if ($fileHandle != FALSE) { ?> 
+				<?php $rowCount = 0; while (($row = fgetcsv($fileHandle, 0, ',')) !==FALSE ) {  $rowCount++; ?>
 					<div class="cell">
 						<div class="card">
 							<div class="card-section">
-								<img src="http://satyr.io/720x16:9/?texture=cross">
-								<h4>Item</h4>
-								<p>Brief Item Description</p>
-								<p><button class="button" data-open="itemModal1">Watch Video</button></p>
+								<button class="img-button" data-open="itemModal<?php echo $rowCount; ?>"><img src="./images/rtw-img01.png"></button>
+								<h4><?php echo $row[0]; ?></h4>
+								<p><?php echo $row[1]; ?></p>
+								<p><button class="button" data-open="itemModal<?php echo $rowCount; ?>">Watch Video</button></p>
 							</div>
 						</div>
 					</div>
-					<div class="cell">
-						<div class="card">
-							<div class="card-section">
-								<img src="http://satyr.io/720x16:9/?texture=cross">
-								<h4>Item</h4>
-								<p>Brief Item Description</p>
-								<p><button class="button" data-open="itemModal1">Watch Video</button></p>
-							</div>
-						</div>
+
+					<div class="reveal" id="itemModal<?php echo $rowCount; ?>" data-reveal>
+						<h1><?php echo $row[0]; ?></h1>
+						<p class="lead"><?php echo $row[1]; ?></p>
+						<div class="responsive-embed"><iframe class="video-player" src="<?php echo $row[2]; ?>" width="320" height="240" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+						<button class="close-button" data-close aria-label="Close modal" type="button">
+							<span aria-hidden="true">&times;</span>
+						</button>
 					</div>
-					<div class="cell">
-						<div class="card">
-							<div class="card-section">
-								<img src="http://satyr.io/720x16:9/?texture=cross">
-								<h4>Item</h4>
-								<p>Brief Item Description</p>
-								<p><button class="button" data-open="itemModal1">Watch Video</button></p>
-							</div>
-						</div>
-					</div>
-					<div class="cell">
-						<div class="card">
-							<div class="card-section">
-								<img src="http://satyr.io/720x16:9/?texture=cross">
-								<h4>Item</h4>
-								<p>Brief Item Description</p>
-								<p><button class="button" data-open="itemModal1">Watch Video</button></p>
-							</div>
-						</div>
-					</div>
-					<div class="cell">
-						<div class="card">
-							<div class="card-section">
-								<img src="http://satyr.io/720x16:9/?texture=cross">
-								<h4>Item</h4>
-								<p>Brief Item Description</p>
-								<p><button class="button" data-open="itemModal1">Watch Video</button></p>
-							</div>
-						</div>
-					</div>
-					<div class="cell">
-						<div class="card">
-							<div class="card-section">
-								<img src="http://satyr.io/720x16:9/?texture=cross">
-								<h4>Item</h4>
-								<p>Brief Item Description</p>
-								<p><button class="button" data-open="itemModal1">Watch Video</button></p>
-							</div>
-						</div>
-					</div>
+				<?php } ?>
+				<?php } ?>
+
 				</div>
 			</div>
 			<div class="cell">
@@ -99,14 +76,4 @@ $pageTitle = 'Product One - '.$locationTitle;
 
 		</div>
 	</div>
-
-<div class="reveal" id="itemModal1" data-reveal>
-	<h1>Item</h1>
-	<p class="lead">Brief Description</p>
-	<div class="responsive-embed"><iframe width="560" height="315" src="https://www.youtube.com/embed/uilkmUoXoLU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-	<button class="close-button" data-close aria-label="Close modal" type="button">
-		<span aria-hidden="true">&times;</span>
-	</button>
-</div>
-
 <?php include 'footer.php';?>

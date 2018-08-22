@@ -43,7 +43,7 @@ $pageTitle = 'Products - First Service Residential';
 					<div class="cell">
 						<div class="card">
 							<div class="card-section">
-								<img src="./images/baila-img01.png">
+								<a href="./baila"><img src="./images/baila-img01.png"></a>
 								<h4>Baila!</h4>
 								<p>Dance your way to fitness. Baila!™ teaches the basics of popular Latin dances to make fitness fun!</p>
 								<p><a href="./baila"><button class="button">More Info</button></a></p>
@@ -53,7 +53,7 @@ $pageTitle = 'Products - First Service Residential';
 					<div class="cell">
 						<div class="card">
 							<div class="card-section">
-								<img src="./images/lbd-img01.png">
+								<a href="./little-black-dress"><img src="./images/lbd-img01.png"></a>
 								<h4>Little Black Dress</h4>
 								<p>Fit back into your little black dress in just two weeks, and just 8 minutes a day at home.</p>
 								<p><a href="./little-black-dress"><button class="button">More Info</button></a></p>
@@ -63,7 +63,7 @@ $pageTitle = 'Products - First Service Residential';
 					<div class="cell">
 						<div class="card">
 							<div class="card-section">
-								<img src="./images/28day-img01.png">
+								<a href="./28-day"><img src="./images/28day-img01.png"></a>
 								<h4>28 Day Challenge</h4>
 								<p>Lose a size in 28 days and just 8 minutes a day with easy, effective workouts at home.</p>
 								<p><a href="./28-day"><button class="button">More Info</button></a></p>
@@ -73,7 +73,7 @@ $pageTitle = 'Products - First Service Residential';
 					<!--<div class="cell">
 						<div class="card">
 							<div class="card-section">
-								<img src="./images/rtw-img01.png">
+								<a href="./rock-the-walk"><img src="./images/rtw-img01.png"></a>
 								<h4>Rock The Walk</h4>
 								<p>Get on the road to fitness with an easy, low-impact program set to classic rock music.</p>
 								<p><a href="./rock-the-walk"><button class="button">More Info</button></a></p>
@@ -83,7 +83,7 @@ $pageTitle = 'Products - First Service Residential';
 					<div class="cell">
 						<div class="card">
 							<div class="card-section">
-								<img src="./images/grye-img01.png">
+								<a href="./gentlemen"><img src="./images/grye-img01.png"></a>
 								<h4>Gentlemen, Restart Your Engines</h4>
 								<p>Gents, bring your body out of retirement in just two weeks, and just 8 minutes a day.</p>
 								<p><a href="./gentlemen"><button class="button">More Info</button></a></p>

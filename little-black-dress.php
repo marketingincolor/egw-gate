@@ -37,7 +37,7 @@ $pageTitle = 'Little Black Dress - '.$locationTitle;
 					<div class="cell">
 						<div class="card">
 							<div class="card-section">
-								<img src="./images/lbd-img01.png">
+								<button class="img-button" data-open="itemModal<?php echo $rowCount; ?>"><img src="./images/lbd-img01.png"></button>
 								<h4><?php echo $row[0]; ?></h4>
 								<p><?php echo $row[1]; ?></p>
 								<p><button class="button" data-open="itemModal<?php echo $rowCount; ?>">Watch Video</button></p>
@@ -48,7 +48,7 @@ $pageTitle = 'Little Black Dress - '.$locationTitle;
 					<div class="reveal" id="itemModal<?php echo $rowCount; ?>" data-reveal>
 						<h1><?php echo $row[0]; ?></h1>
 						<p class="lead"><?php echo $row[1]; ?></p>
-						<div class="responsive-embed"><iframe src="<?php echo $row[2]; ?>" width="320" height="240" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+						<div class="responsive-embed"><iframe class="video-player" src="<?php echo $row[2]; ?>" width="320" height="240" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
 						<button class="close-button" data-close aria-label="Close modal" type="button">
 							<span aria-hidden="true">&times;</span>
 						</button>
