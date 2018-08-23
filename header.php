@@ -23,7 +23,7 @@
 						<img src="<?php echo $logoPath; ?>">
 					</div>
 					<div class="cell auto">
-						<h1><?php echo $locationTitle;?> &mdash; Activity Programs</h1>
+						<h1><?php echo $locationTitle;?> &mdash; Lifestyle Programs</h1>
 					</div>
 				</div>
 			</div>

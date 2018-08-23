@@ -37,7 +37,7 @@ $pageTitle = 'Little Black Dress - '.$locationTitle;
 					<div class="cell">
 						<div class="card">
 							<div class="card-section">
-								<button class="img-button" data-open="itemModal<?php echo $rowCount; ?>"><img src="./images/lbd-img01.png"></button>
+								<button class="img-button" data-open="itemModal<?php echo $rowCount; ?>"><img src="./images/<?php echo $row[3]; ?>"></button>
 								<h4><?php echo $row[0]; ?></h4>
 								<p><?php echo $row[1]; ?></p>
 								<p><button class="button" data-open="itemModal<?php echo $rowCount; ?>">Watch Video</button></p>

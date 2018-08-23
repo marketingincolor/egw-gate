@@ -37,7 +37,7 @@ $pageTitle = 'Baila! - '.$locationTitle;
 					<div class="cell">
 						<div class="card">
 							<div class="card-section">
-								<button class="img-button" data-open="itemModal<?php echo $rowCount; ?>"><img src="./images/baila-img01.png"></button>
+								<button class="img-button" data-open="itemModal<?php echo $rowCount; ?>"><img src="./images/<?php echo $row[3]; ?>"></button>
 								<h4><?php echo $row[0]; ?></h4>
 								<p><?php echo $row[1]; ?></p>
 								<p><button class="button" data-open="itemModal<?php echo $rowCount; ?>">Watch Video</button></p>
@@ -62,7 +62,7 @@ $pageTitle = 'Baila! - '.$locationTitle;
 			<div class="cell">
 				<div class="grid-x grid-padding-x">
 					<div class="cell">
-						<p>No dance experience is needed to enjoy this low-impact, high-energy experience!</p>
+						<p>No dance experience is needed to enjoy this low-impact, high-energy experience! This program is also available on DVD - please contact your Property Manager at (XXX) XXX-XXXX for more information!</p>
 					</div>
 				</div>
 			</div>
