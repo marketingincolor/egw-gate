@@ -25,9 +25,9 @@ $pageTitle = 'Lifestyle Programs - FirstService Residential';
 					</div>
 					<div class="cell medium-6">
 						<h2>Your Daily Workout</h2>
-						<h4>28 Day Challenge - Day 12 Strength Aerobics</h4>
-						<p>Brief Item Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacus odio, accumsan id ullamcorper eget, varius nec erat. Nulla facilisi. Donec dui felis, euismod nec finibus vitae, dapibus quis arcu. Maecenas tempor et ipsum quis venenatis. Ut posuere sed augue sit amet efficitur.</p>
-						<p>Ut aliquet efficitur ligula, a consectetur felis. Proin tristique ut augue nec luctus. Curabitur a sapien pretium, auctor elit a, efficitur erat. Donec tincidunt dui vel velit bibendum euismod. Cras vitae nibh dui. Aliquam erat volutpat. Etiam sit amet arcu a erat efficitur facilisis. Ut viverra dapibus turpis, et ornare justo. Integer in dui cursus, dignissim tortor a, hendrerit risus.</p>
+						<!--<h4>28 Day Challenge - Day 12 Strength Aerobics</h4>-->
+						<p>Here is your new daily lifestyle video brought to you by FirstService Residential and Evergreen Wellness®. Don't forget to properly warm up prior to starting your workout.</p>
+						<p>Consult your physician, assess your fitness levels, and follow all safety instructions before beginning this or any exercise program. These workouts are physically demanding and high-intensity exercise programs that may not be appropriate for everyone. It is important that you listen to your body, use common sense, take breaks, and hydrate as needed to avoid injury and help prevent serious medical conditions. Only you can know if you are physically able to safely perform this exercise program and follow a nutrition plan. </p>
 					</div>
 				</div>
 			</div>
