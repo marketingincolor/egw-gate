@@ -3,7 +3,6 @@
  * Header component for gateway system.
  *
  */
-$altlogoPath = './images/fsr-logo-clear.svg';
 ?>
 <!doctype html>
 <html class="no-js" lang="en">
@@ -21,7 +20,7 @@ $altlogoPath = './images/fsr-logo-clear.svg';
 			<div class="grid-container">
 				<div class="grid-x grid-margin-x align-middle">
 					<div class="cell small-2">
-						<img src="<?php echo $altlogoPath; ?>">
+						<img src="<?php echo $logoPath; ?>">
 					</div>
 					<div class="cell auto">
 						<h1><?php echo $locationTitle;?> &mdash; Lifestyle Programs</h1>
