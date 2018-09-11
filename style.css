@@ -14,12 +14,19 @@ p { line-height:inherit; }
 .img-button { cursor:pointer; }
 /* LOCATION STYLING - DEFAULT */
 body.gateway {}
-body.gateway h1, h2, h3, h4, h5 { color:#000; font-weight:bold; }
-body.gateway .header, body.gateway .footer { display:none; }
+body.gateway h1, h2, h3, h4, h5 { color:#000 !important; font-weight:bold; }
+body.gateway h3 { margin:1.5em 0; text-align:center; font-size:30px; }
+body.gateway .cell img { max-width:420px; }
+body.gateway .description {line-height:1.2; }
+body.gateway .header { display:none; }
+body.gateway .footer h3 { font-size:0.75em; }
 iframe { border:0; }
-.statement { font-size:14px; }
+body.gateway .statement { font-size:24px; }
+body.gateway .statement span { font-size:16px; }
 .disclaimer { height:100px; overflow-x:hidden; font-size:14px; line-height:1; }
-
+.black { color:#000; }
+.login { }
+.cell form a { float:left; }
 
 /* LOCATION STYLING - FIRST SERVICE RESIDENTIAL */
 body.fsres { /*background-color:#57595b;*/ }

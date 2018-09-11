@@ -27,7 +27,7 @@ $pageTitle = 'Lifestyle Programs - FirstService Residential';
 						<h2>Your Daily Workout</h2>
 						<!--<h4>28 Day Challenge - Day 12 Strength Aerobics</h4>-->
 						<p>Daily Workout videos appear here Monday through Friday compliments of <a href="https://www.fsresidential.com/corporate" target="_blank">FirstService Residential</a> and our lifestyle programs partner <a href="https://shop.myevergreenwellness.com/" target="_blank">Evergreen Wellness</a>®. We hope you enjoy!</p>
-						<p style="font-size: 0.825em;">We recommend you review the terms of use of this site before beginning any workout regimens. And also recommend that you consider properly warming up prior to working out. </p>
+						<p style="font-size: 0.825em; font-style:italic;">We recommend you review the <a>terms of use</a> of this site before beginning any workout regimens. And also recommend that you <a>consider properly warming up</a> prior to working out. </p>
 					</div>
 				</div>
 			</div>
