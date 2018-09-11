@@ -26,6 +26,7 @@ $pageTitle = 'Baila! - '.$locationTitle;
 				<div class="grid-x grid-padding-x">
 					<div class="cell">
 						<p>Welcome to Baila!™, the dance-inspired fitness workout that takes you through Latin America – in the privacy of your home. Learn the basic steps and enjoy great workouts with easy-to-follow, choreographed routines!</p>
+						<p style="text-align:center;">Tips <a href="https://intercom.help/Evergreen-Wellness/help-evergreen-wellness-shop/is-your-online-video-not-playing-correctly" target="_blank">playing online video</a> | Baila! <a href="https://shop.myevergreenwellness.com/products/baila" target="_blank">also available on DVD</a></p>
 					</div>
 				</div>
 			</div>
@@ -62,7 +63,7 @@ $pageTitle = 'Baila! - '.$locationTitle;
 			<div class="cell">
 				<div class="grid-x grid-padding-x">
 					<div class="cell">
-						<p>No dance experience is needed to enjoy this low-impact, high-energy experience! This program is also available on DVD - please contact your Property Manager at (XXX) XXX-XXXX for more information!</p>
+						<p style="text-align:center;">&nbsp;</p>
 					</div>
 				</div>
 			</div>

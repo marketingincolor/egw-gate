@@ -26,16 +26,16 @@ $pageTitle = 'Lifestyle Programs - FirstService Residential';
 					<div class="cell medium-6">
 						<h2>Your Daily Workout</h2>
 						<!--<h4>28 Day Challenge - Day 12 Strength Aerobics</h4>-->
-						<p>Here is your new daily lifestyle video brought to you by FirstService Residential and Evergreen Wellness®. Don't forget to properly warm up prior to starting your workout.</p>
-						<p>Consult your physician, assess your fitness levels, and follow all safety instructions before beginning this or any exercise program. These workouts are physically demanding and high-intensity exercise programs that may not be appropriate for everyone. It is important that you listen to your body, use common sense, take breaks, and hydrate as needed to avoid injury and help prevent serious medical conditions. Only you can know if you are physically able to safely perform this exercise program and follow a nutrition plan. </p>
+						<p>Daily Workout videos appear here Monday through Friday compliments of <a href="https://www.fsresidential.com/corporate" target="_blank">FirstService Residential</a> and our lifestyle programs partner <a href="https://shop.myevergreenwellness.com/" target="_blank">Evergreen Wellness</a>®. We hope you enjoy!</p>
+						<p style="font-size: 0.825em;">We recommend you review the terms of use of this site before beginning any workout regimens. And also recommend that you consider properly warming up prior to working out. </p>
 					</div>
 				</div>
 			</div>
 			<div class="cell">
 				<div class="grid-x grid-padding-x">
 					<div class="cell">
-						<h2>Current Workout Programs</h2>
-						<p>All of our video programs can be watched online, so you can participate and get involved in the comfort and privacy of your home. Our virtual trainers and category experts will coach you through their easy-to-follow programs—follow them and enjoy the benefits!</p>
+						<h2>Bonus Workout Programs!</h2>
+						<p>All of our video programs can be watched online, for you to enjoy in the comfort and privacy of your home. Some selected programs are available for purchase on DVD as well.</p>
 					</div>
 				</div>
 			</div>
@@ -47,7 +47,7 @@ $pageTitle = 'Lifestyle Programs - FirstService Residential';
 								<a href="./baila"><img src="./images/baila-img01.png"></a>
 								<h4>Baila!</h4>
 								<p>Dance your way to fitness. Baila!™ teaches the basics of popular Latin dances to make fitness fun!</p>
-								<p><a href="./baila"><button class="button">More Info</button></a></p>
+								<p><a href="./baila"><button class="button">Watch Workouts</button></a></p>
 							</div>
 						</div>
 					</div>
@@ -57,7 +57,17 @@ $pageTitle = 'Lifestyle Programs - FirstService Residential';
 								<a href="./little-black-dress"><img src="./images/lbd-img01.png"></a>
 								<h4>Little Black Dress</h4>
 								<p>Fit back into your little black dress in just two weeks, and just 8 minutes a day at home.</p>
-								<p><a href="./little-black-dress"><button class="button">More Info</button></a></p>
+								<p><a href="./little-black-dress"><button class="button">Watch Workouts</button></a></p>
+							</div>
+						</div>
+					</div>
+					<div class="cell">
+						<div class="card">
+							<div class="card-section">
+								<a href="./rock-the-walk"></a><img src="./images/rtw-img01.png"></a>
+								<h4>Rock The Walk</h4>
+								<p>Get on the road to fitness with an easy, low-impact program set to classic rock music.</p>
+								<p><button class="button">COMING SOON!</button><!--<a href="./rock-the-walk"><button class="button">Watch Workouts</button></a>--></p>
 							</div>
 						</div>
 					</div>
@@ -67,30 +77,20 @@ $pageTitle = 'Lifestyle Programs - FirstService Residential';
 								<a href="./28-day"><img src="./images/28day-img01.png"></a>
 								<h4>28 Day Challenge</h4>
 								<p>Lose a size in 28 days and just 8 minutes a day with easy, effective workouts at home.</p>
-								<p><a href="./28-day"><button class="button">More Info</button></a></p>
-							</div>
-						</div>
-					</div>
-					<!--<div class="cell">
-						<div class="card">
-							<div class="card-section">
-								<a href="./rock-the-walk"><img src="./images/rtw-img01.png"></a>
-								<h4>Rock The Walk</h4>
-								<p>Get on the road to fitness with an easy, low-impact program set to classic rock music.</p>
-								<p><a href="./rock-the-walk"><button class="button">More Info</button></a></p>
+								<p><a href="./28-day"><button class="button">Watch Workouts</button></a></p>
 							</div>
 						</div>
 					</div>
 					<div class="cell">
 						<div class="card">
 							<div class="card-section">
-								<a href="./gentlemen"><img src="./images/grye-img01.png"></a>
+								<a href="./gentlemen"></a><img src="./images/grye-img01.png"></a>
 								<h4>Gentlemen, Restart Your Engines</h4>
 								<p>Gents, bring your body out of retirement in just two weeks, and just 8 minutes a day.</p>
-								<p><a href="./gentlemen"><button class="button">More Info</button></a></p>
+								<p><button class="button">COMING SOON!</button><!--<a href="./gentlemen"><button class="button">Watch Workouts</button></a>--></p>
 							</div>
 						</div>
-					</div>-->
+					</div>
 				</div>
 			</div>
 		</div>

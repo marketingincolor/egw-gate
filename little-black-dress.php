@@ -37,10 +37,19 @@ $pageTitle = 'Little Black Dress - '.$locationTitle;
 					<div class="cell">
 						<div class="card">
 							<div class="card-section">
+							<?php if ($row[2] != '') { ?>
 								<button class="img-button" data-open="itemModal<?php echo $rowCount; ?>"><img src="./images/<?php echo $row[3]; ?>"></button>
+							<?php } else { ?>
+								<img src="./images/<?php echo $row[3]; ?>">
+							<?php } ?> 
 								<h4><?php echo $row[0]; ?></h4>
 								<p><?php echo $row[1]; ?></p>
+
+							<?php if ($row[2] != '') { ?>
 								<p><button class="button" data-open="itemModal<?php echo $rowCount; ?>">Watch Video</button></p>
+							<?php } else { ?>
+								<p>&nbsp;</p>
+							<?php } ?> 
 							</div>
 						</div>
 					</div>
@@ -61,7 +70,7 @@ $pageTitle = 'Little Black Dress - '.$locationTitle;
 			<div class="cell">
 				<div class="grid-x grid-padding-x">
 					<div class="cell">
-						<p>Fit back into your little black dress in just two weeks, and just 8 minutes a day at home.</p>
+						<p style="text-align:center;">&nbsp;</p>
 					</div>
 				</div>
 			</div>

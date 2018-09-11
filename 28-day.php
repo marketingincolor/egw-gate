@@ -37,10 +37,19 @@ $pageTitle = '28 Day Challenge - '.$locationTitle;
 					<div class="cell">
 						<div class="card">
 							<div class="card-section">
+							<?php if ($row[2] != '') { ?>
 								<button class="img-button" data-open="itemModal<?php echo $rowCount; ?>"><img src="./images/<?php echo $row[3]; ?>"></button>
+							<?php } else { ?>
+								<img src="./images/<?php echo $row[3]; ?>">
+							<?php } ?> 
 								<h4><?php echo $row[0]; ?></h4>
 								<p><?php echo $row[1]; ?></p>
+
+							<?php if ($row[2] != '') { ?>
 								<p><button class="button" data-open="itemModal<?php echo $rowCount; ?>">Watch Video</button></p>
+							<?php } else { ?>
+								<p>&nbsp;</p>
+							<?php } ?> 
 							</div>
 						</div>
 					</div>
@@ -61,7 +70,7 @@ $pageTitle = '28 Day Challenge - '.$locationTitle;
 			<div class="cell">
 				<div class="grid-x grid-padding-x">
 					<div class="cell">
-						<p>It's not about the quantity of exercise. It's about quality. As the days go by, you'll see it only takes 8 minutes a day of focused workout time for you to look and feel better.</p>
+						<p style="text-align:center;">&nbsp;</p>
 					</div>
 				</div>
 			</div>

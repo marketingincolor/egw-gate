@@ -6,7 +6,9 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 body, h1, h2, h3, h4, h5 { font-family: 'PT Sans', sans-serif; }
-h1 { font-size: 2.75em; font-weight: bold; }
+body { font-size:18px; line-height:1.4; }
+h1 { font-size: 2.5em; font-weight: bold; }
+p { line-height:inherit; }
 .footer { padding: 1.5em 0; }
 .footer h3 { font-size:0.75em; font-weight:normal; }
 .img-button { cursor:pointer; }
@@ -14,6 +16,10 @@ h1 { font-size: 2.75em; font-weight: bold; }
 body.gateway {}
 body.gateway h1, h2, h3, h4, h5 { color:#000; font-weight:bold; }
 body.gateway .header, body.gateway .footer { display:none; }
+iframe { border:0; }
+.statement { font-size:14px; }
+.disclaimer { height:100px; overflow-x:hidden; font-size:14px; line-height:1; }
+
 
 /* LOCATION STYLING - FIRST SERVICE RESIDENTIAL */
 body.fsres { /*background-color:#57595b;*/ }

@@ -61,7 +61,7 @@ $pageTitle = 'Gentlemen, Restart Your Engines - '.$locationTitle;
 			<div class="cell">
 				<div class="grid-x grid-padding-x">
 					<div class="cell">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacus odio, accumsan id ullamcorper eget, varius nec erat. Nulla facilisi. Donec dui felis, euismod nec finibus vitae, dapibus quis arcu.</p>
+						<p style="text-align:center;">&nbsp;</p>
 					</div>
 				</div>
 			</div>
