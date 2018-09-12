@@ -48,7 +48,7 @@ $logoPath = './images/fsr-logo-horizontal.png';
 				        </form>
 					</div>
 					<div class="cell small-10 small-offset-1 medium-6 medium-offset-3 text-center">
-						<h5 class="statement">Terms of Use<br><span>(Please Scroll)</span></h5>
+						<h5 class="statement">Legal<br><span>(Please Scroll)</span></h5>
 						<div class="disclaimer">
 							<?php echo $siteDisclaimer; ?>
 						</div>

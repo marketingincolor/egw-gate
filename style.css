@@ -25,6 +25,7 @@ body.gateway .statement { font-size:24px; }
 body.gateway .statement span { font-size:16px; }
 .disclaimer { height:100px; overflow-x:hidden; font-size:14px; line-height:1; }
 .black { color:#000; }
+.headline { margin-top:.75em; }
 .login { }
 .cell form a { float:left; }
 

@@ -25,7 +25,7 @@ $pageTitle = 'Little Black Dress - '.$locationTitle;
 			<div class="cell">
 				<div class="grid-x grid-padding-x">
 					<div class="cell">
-						<h4 class="black">Ladies, take the first step to getting back into your Little Black Dress!</h4>
+						<h4 class="black headline">Ladies, take the first step to getting back into your Little Black Dress!</h4>
 						<p>Get ready to burn fat and gain strength when you follow Jaime Brenkus' two-week fitness and clean meals program. You can perform these easy, convenient, and effective routines, right in your home in just 8 minutes a day.</p>
 						<p><b>Before you begin,</b> learn what you'll need by viewing our quick start guide.</p>
 						<p><button class="button">Little Black Dress Quick Start Guide &raquo;</button></p>
