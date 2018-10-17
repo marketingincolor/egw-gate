@@ -1,17 +1,18 @@
 <?php 
 /**
- * Product compnent for gateway system. Should get cookie data, if set, and 
- * should route based off that to the appropriate section/location.
- *
+ * Product component for gateway system.
  */ 
-$passKeys = array('fsr001', 'fsr002', 'fsr003', 'fsr004', 'fsr005');
-$savedKey = ( isset($_COOKIE["gatekey"]) ? $_COOKIE["gatekey"] : 'unknown' );
-
+include './components/keycheck.php'; 
+// REQUIRED FOR ALL LOCATION VARIABLE CONTENT 
 if( !in_array($savedKey, $passKeys) ) { header('Location: ./'); }
 
-// REQUIRED FOR ALL LOCATION VARIABLE CONTENT 
-include 'contentchooser.php'; 
-$pageTitle = 'Lifestyle Programs - FirstService Residential';
+if($is_fsr) {
+	include './components/contentchooser-fsr.php'; 
+} elseif($is_cg) {
+	include './components/contentchooser-cg.php'; 
+} else {
+	include './components/contentchooser.php'; 
+}
 ?>
 <?php include 'header.php'; ?>
 
@@ -25,8 +26,7 @@ $pageTitle = 'Lifestyle Programs - FirstService Residential';
 					</div>
 					<div class="cell medium-6">
 						<h2>Your Daily Workout</h2>
-						<!--<h4>28 Day Challenge - Day 12 Strength Aerobics</h4>-->
-						<p>Daily Workout videos appear here Monday through Friday compliments of <a href="https://www.fsresidential.com/corporate" target="_blank">FirstService Residential</a> and our lifestyle programs partner <a href="https://shop.myevergreenwellness.com/" target="_blank">Evergreen Wellness</a>®. We hope you enjoy!</p>
+						<p>Daily Workout videos appear here Monday through Friday compliments of <a href="<?php echo $companyUrl; ?>" target="_blank"><?php echo $company; ?></a> and our lifestyle programs partner <a href="https://shop.myevergreenwellness.com/" target="_blank">Evergreen Wellness</a>®. We hope you enjoy!</p>
 						<p style="font-size: 0.825em; font-style:italic;">We recommend you review the <a>legal use</a> of this site before beginning any workout regimens. And also recommend that you <a>consider properly warming up</a> prior to working out. </p>
 					</div>
 				</div>

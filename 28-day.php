@@ -4,15 +4,20 @@
  * should route based off that to the appropriate section/location.
  *
  */ 
-$passKeys = array('fsr001', 'fsr002', 'fsr003', 'fsr004', 'fsr005');
-$savedKey = ( isset($_COOKIE["gatekey"]) ? $_COOKIE["gatekey"] : 'unknown' );
+include './components/keycheck.php'; 
+// REQUIRED FOR ALL LOCATION VARIABLE CONTENT 
 if( !in_array($savedKey, $passKeys) ) { header('Location: ./products'); }
 
 // Connects display page to proper CSV file
 $fileHandle = fopen('./28-day.csv', 'r');
 
-// REQUIRED FOR ALL LOCATION VARIABLE CONTENT 
-include 'contentchooser.php';
+if($is_fsr) {
+	include './components/contentchooser-fsr.php'; 
+} elseif($is_cg) {
+	include './components/contentchooser-cg.php'; 
+} else {
+	include './components/contentchooser.php'; 
+}
 $pageTitle = '28 Day Challenge - '.$locationTitle;
 ?>
 <?php include 'header.php';?>

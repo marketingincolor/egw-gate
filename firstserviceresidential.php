@@ -18,12 +18,9 @@ if( $_POST ) {
 	}
 }
 // REQUIRED FOR ALL LOCATION VARIABLE CONTENT 
-include './components/contentchooser.php'; 
-$pageTitle = 'GateKeeper - Live Evergreen';
-$logoPath = './images/egw-logo-horizontal.png';
-//$request_uri = explode('?', $_SERVER['REQUEST_URI'], 2);
-//echo $request_uri[0];
-//var_dump($GLOBALS);
+include './components/contentchooser-fsr.php'; 
+$pageTitle = 'GateKeeper - First Service Residential';
+$logoPath = './images/fsr-logo-horizontal.png';
 ?>
 <?php include 'header.php';?>
 	<div class="grid-container">

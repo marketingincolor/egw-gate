@@ -18,12 +18,9 @@ if( $_POST ) {
 	}
 }
 // REQUIRED FOR ALL LOCATION VARIABLE CONTENT 
-include './components/contentchooser.php'; 
-$pageTitle = 'GateKeeper - Live Evergreen';
-$logoPath = './images/egw-logo-horizontal.png';
-//$request_uri = explode('?', $_SERVER['REQUEST_URI'], 2);
-//echo $request_uri[0];
-//var_dump($GLOBALS);
+include './components/contentchooser-cg.php'; 
+$pageTitle = 'GateKeeper - Castle Group';
+$logoPath = './images/cg-logo-sm.png';
 ?>
 <?php include 'header.php';?>
 	<div class="grid-container">

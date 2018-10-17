@@ -5,16 +5,17 @@ Description:
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
-body, h1, h2, h3, h4, h5 { font-family: 'PT Sans', sans-serif; }
+/*body, h1, h2, h3, h4, h5 { font-family: 'PT Sans', sans-serif; }*/
 body { font-size:18px; line-height:1.4; }
 h1 { font-size: 2.5em; font-weight: bold; }
 p { line-height:inherit; }
 .footer { padding: 1.5em 0; }
 .footer h3 { font-size:0.75em; font-weight:normal; }
 .img-button { cursor:pointer; }
+
 /* LOCATION STYLING - DEFAULT */
-body.gateway {}
-body.gateway h1, h2, h3, h4, h5 { color:#000 !important; font-weight:bold; }
+body.gateway { font-family: 'PT Sans', sans-serif; }
+body.gateway h1, h2, h3, h4, h5 { color:#000 !important; font-weight:bold; font-family: 'PT Sans', sans-serif; }
 body.gateway h3 { margin:1.5em 0; text-align:center; font-size:30px; }
 body.gateway .cell img { max-width:420px; }
 body.gateway .description {line-height:1.2; }
@@ -30,12 +31,23 @@ body.gateway .statement span { font-size:16px; }
 .cell form a { float:left; }
 
 /* LOCATION STYLING - FIRST SERVICE RESIDENTIAL */
-body.fsres { /*background-color:#57595b;*/ }
+body.fsres { font-family: 'PT Sans', sans-serif; }
 body.fsres .header { background-color:#57595b; border-bottom: 10px solid #0099d2; }
 body.fsres .header img { padding:1em 0; }
 body.fsres .header h1 { color:#fff; }
-body.fsres .content h1, h2, h3, h4, h5 { color:#0099d2; font-weight:bold; }
+body.fsres .content h1, h2, h3, h4, h5 { color:#0099d2; font-weight:bold; font-family: 'PT Sans', sans-serif; }
 body.fsres .content { /*background-color:#57595b; color:#fff;*/  margin-top:2.75em; }
 body.fsres .content img { width:100%; }
 body.fsres .footer { background-color:#333333; color:#fff; }
 body.fsres .footer h3 { color:#fff; }
+
+/* LOCATION STYLING - CASTLE GROUP */
+body.cgroup { font-family: 'Open Sans', sans-serif;  }
+body.cgroup .header { background-color:#57595b; border-bottom: 10px solid #a5803f; }
+body.cgroup .header img { padding:1em 0; }
+body.cgroup .header h1 { color:#fff; }
+body.cgroup .content h1, h2, h3, h4, h5 { color:#a5803f; font-weight:bold; font-family: 'Open Sans', sans-serif; }
+body.cgroup .content { /*background-color:#57595b; color:#fff;*/  margin-top:2.75em; }
+body.cgroup .content img { width:100%; }
+body.cgroup .footer { background-color:#333333; color:#fff; }
+body.cgroup .footer h3 { color:#fff; }
