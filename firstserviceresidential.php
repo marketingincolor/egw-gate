@@ -23,32 +23,31 @@ $pageTitle = 'GateKeeper - First Service Residential';
 $logoPath = './images/fsr-logo-horizontal.png';
 ?>
 <?php include 'header.php';?>
-	<div class="grid-container">
-		<div class="grid-x align-center-middle">
-			<div class="cell">
-				<div class="grid-x grid-padding-x">
-					<div class="cell small-10 small-offset-1 medium-6 medium-offset-3">&nbsp;</div>
-					<div class="cell small-10 small-offset-1 medium-6 medium-offset-3 text-center"><img src="<?php echo $logoPath; ?>"></div>
-					<div class="cell small-10 small-offset-1 medium-6 medium-offset-3">
-						<h3>Welcome to your Lifestyle Programs</h3>
-						<p class="description">Entering and submitting your <?php echo $company; ?> community passphrase in the field below is your acknowledgement that you’ve read, understand, and agree with the Terms of Use content shown below.</p>
-					</div>
-					<div class="cell small-10 small-offset-1 medium-6 medium-offset-3 text-center">
-				        <form action="" method="post">
-				            <input type="text" name="passcode" placeholder="Enter Passphrase" class="login">
-				            <a>I don't have a passphrase!</a><br><br clear="both">
-				            <input type="submit" class="button" name="SubmitButton">
-				            <br><br>
-				        </form>
-					</div>
-					<div class="cell small-10 small-offset-1 medium-6 medium-offset-3 text-center">
-						<h5 class="statement">Legal<br><span>(Please Scroll)</span></h5>
-						<div class="disclaimer">
-							<?php echo $siteDisclaimer; ?>
-						</div>
-					</div>
-				</div>
+
+	<section class="welcome">
+		<div class="grid-x align-middle">
+			<div class="cell small-10 small-offset-1 medium-6 medium-offset-0">
+				<h3>Welcome to your <br class="show-for-medium">Lifestyle Programs</h3>
+				<p class="text-center"><button class="button" data-open="login-modal">Get Started</button></p>
+			</div>
+			<div class="cell small-10 small-offset-1 medium-6 medium-offset-0 text-center">
+        <img src="images/fsr-people.png" alt="First Service Residential">
 			</div>
 		</div>
-	</div>
+	</section>
+
+  <!-- Login Modal -->
+  <div class="reveal" id="login-modal" data-reveal>
+    <h4>Please enter your <?php echo $company; ?> passphrase.</h4>
+    <p class="description"><strong>Disclaimer:</strong> Evergreen Wellness, producer of the video content that follows, does not provide health care or give health care advice. The video content is for your information or entertainment purposes only and it is not meant to be relied on as medical advice, diagnosis, or treatment. Consult your physician before starting any exercise or program or taking any other action respecting your health. And, of course, if you experience any sort of urgent health care need, do not seek guidance on this site, but immediately call 911.</p>
+    <p><strong>Important:</strong> By entering your passphrase, you acknowledge that you have read and understand the above disclaimer.</p>
+    <form action="" method="post">
+      <input type="text" name="passcode" placeholder="Enter Passphrase" class="login"><input type="submit" class="button" name="SubmitButton" value="Enter"><br>
+      <p><a>Need a passphrase?</a></p>
+      <p>If you do not have a passphrase, please contact your Lifestyle Director or <?php echo isset($companyContact) ? $companyContact : 'XXX XXXX'; ?> at your <?php echo $company; ?> community.</p>
+    </form>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
 <?php include 'footer.php';?>

@@ -7,7 +7,7 @@
 	<div class="grid-container fluid footer">
 		<div class="grid-x">
 			<div class="cell text-center">
-				<h3>&copy <?php echo date('Y'); ?> Evergreen Wellness&reg; LLC.&nbsp;&nbsp;All Rights Reserved.<br>Brought to you by <?php echo $company; ?>.</h3>
+				<h3>&copy <?php echo date('Y'); ?> Evergreen Wellness&reg; LLC | All Rights Reserved | <a href="/terms-of-use">Terms of Use</a> | <a href="/privacy-policy">Privacy Policy</a></h3>
 			</div>
 		</div>
 	</div>
