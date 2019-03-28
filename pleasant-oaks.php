@@ -24,4 +24,17 @@ include 'header.php';
     </div>
   </section>
 
+  <section class="devices">
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x grid-margin-y align-middle">
+        <div class="small-offset-1 small-10 medium-6 medium-offset-0 cell">
+          <p>All of our video content can be watched online, for you to enjoy in the comfort and privacy of your home.</p>
+        </div>
+        <div class="small-offset-1 small-10 medium-6 medium-offset-0 cell">
+          <img src="images/devices.png" alt="Available on Desktop tablet and mobile">
+        </div>
+      </div>
+    </div>
+  </section>
+
 <?php include 'footer.php';?>
