@@ -26,5 +26,27 @@
 	    });   
 		</script>
 
+    <!-- Validate Passphrase on front end -->
+    <script>
+      $('#passphrase-form').find('input[type=submit]').click(function(event){
+        event.preventDefault();
+
+        let code = $('#passphrase-form').find('input[type=text]').val();
+
+        $.ajax({
+          type: 'POST',
+          url: 'components/key-list.php',
+          data: { passcode: code },
+          success: function(data){
+            if (data === 'False') {
+              $('#error').css({'display':'inline'});
+            }else{
+              $('#passphrase-form').submit();
+            }
+          }
+        })
+      });
+    </script>
+
 	</body>
 </html>
