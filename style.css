@@ -35,10 +35,10 @@ body.gateway .statement span { font-size:16px; }
 .headline { margin-top:.75em; }
 .login { }
 .cell form a { float:left; }
-body.gateway .top-bar-container{
+.top-bar-container{
   border-bottom: 2px solid #EEE;
 }
-body.gateway .top-bar, body.gateway .top-bar ul{
+.top-bar, .top-bar ul{
   background-color: #FFF;
 }
 body.gateway .top-bar-right .menu{

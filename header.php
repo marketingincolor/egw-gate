@@ -24,7 +24,7 @@
           <div class="small-12 cell">
             <div class="top-bar fsres" style="background-color: #FFF">
               <div class="top-bar-left">
-                <ul class="dropdown menu" data-dropdown-menu>
+                <ul class="menu">
                   <li class="menu-text"><img src="<?php echo $logoPath; ?>" style="max-width:175px"></li>
                 </ul>
               </div>
