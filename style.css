@@ -76,17 +76,6 @@ body.gateway .top-bar-right .menu{
   display: none;
 }
 
-@media(max-width: 1024px){
-
-}
-
-@media(max-width: 640px){
-  
-  #login-modal{
-    padding: 50px 20px;
-  }
-}
-
 /* LOCATION STYLING - FIRST SERVICE RESIDENTIAL */
 
 .top-bar.fsres{
@@ -103,6 +92,14 @@ body.fsres .content img { width:100%; }
 body.fsres .footer { background-color:#333333; color:#fff; }
 body.fsres .footer h3 { color:#fff; }
 
+/* FSRES COMMUNITY HOME PAGE */
+body.fsres .community { background-color: #ecfaff;padding: 5% 0; }
+body.fsres .community h1{ font-size: 2.25rem;margin-bottom: 30px }
+body.fsres .community img{ margin-bottom: 30px }
+body.fsres .community .button{ width: 200px; }
+body.fsres .community .button:first-of-type{ margin-right: 20px; }
+body.fsres .community a { color: #FFF;font-weight: 600;line-height: 1.3; }
+
 /* LOCATION STYLING - CASTLE GROUP */
 body.cgroup { font-family: 'Open Sans', sans-serif;  }
 body.cgroup .header { background-color:#57595b; border-bottom: 10px solid #a5803f; }
@@ -113,3 +110,22 @@ body.cgroup .content { /*background-color:#57595b; color:#fff;*/  margin-top:2.7
 body.cgroup .content img { width:100%; }
 body.cgroup .footer { background-color:#333333; color:#fff; }
 body.cgroup .footer h3 { color:#fff; }
+
+/* RESPONSIVE STYLES */
+@media(max-width: 1024px){
+
+}
+
+@media(max-width: 640px){
+  
+  #login-modal{
+    padding: 50px 20px;
+  }
+  body.fsres .community .button:first-of-type{
+    margin-right: 0;
+  }
+  body.fsres .community h1{
+    font-size: 1.875rem;
+  }
+}
+
