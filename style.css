@@ -12,7 +12,7 @@ p { line-height:inherit; }
 .footer { padding: 1.5em 0;margin-top:50px }
 .footer p { font-size:0.75em; font-weight:normal; }
 .img-button { cursor:pointer; }
-.button a{
+.button a,.button{
   color: #FFF;
   font-weight: 600;
   line-height: 1.3;
