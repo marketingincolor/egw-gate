@@ -18,7 +18,7 @@ include 'header.php';
           <h1>Welcome, <br><?php echo $community; ?>!</h1>
           <img src="images/28-day-challenge.png" alt="28-Day Challenge">
           <h4>Thanks for testing the 28-Day Size Down Challenge!</h4>
-          <button class="button choice"><a href="#!">First-time visitor?<br>Click Here</a></button> <button class="button choice"><a href="/28-day">Returning for more?<br>Click Here</a></button>
+          <button class="button choice"><a id="first-time" href="#!">First-time visitor?<br>Click Here</a></button> <button class="button choice"><a href="/28-day">Returning for more?<br>Click Here</a></button>
         </div>
       </div>
     </div>
@@ -30,14 +30,14 @@ include 'header.php';
         <div class="small-offset-1 small-10 medium-6 medium-offset-0 cell">
           <p>All of our video content can be watched online, for you to enjoy in the comfort and privacy of your home.</p>
         </div>
-        <div class="small-offset-1 small-10 medium-6 medium-offset-0 cell">
+        <div class="small-offset-1 small-10 medium-6 medium-offset-0 cell text-center">
           <img src="images/devices.png" alt="Available on Desktop tablet and mobile">
         </div>
       </div>
     </div>
   </section>
 
-  <section class="documents">
+  <section id="documents" class="documents">
     <div class="grid-container">
       <div class="grid-x">
         <div class="small-10 small-offset-1 large-8 large-offset-2 cell">
@@ -63,7 +63,7 @@ include 'header.php';
           <h3>Meet Your Host, Celebrity Fitness Trainer Jaime Brenkus!</h3>
           <p>Remember the "8 Minute Abs" craze of the 90s? Your host for this challenge is the man who started it all. Now in his late 50s, Jaime Brenkus is putting the boom back in Baby Boomers! While his collection of 8-minute workouts included in this program are designed for older adults, they are suitable for people of any age.</p>
         </div>
-        <div class="small-offset-1 small-10 medium-6 medium-offset-0 cell">
+        <div class="small-offset-1 small-10 medium-6 medium-offset-0 cell text-center">
           <img src="images/jaime-brenkus.png" alt="Jaime Brenkus">
         </div>
       </div>

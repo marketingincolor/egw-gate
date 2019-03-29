@@ -24,16 +24,25 @@
             $(this)[0].contentWindow.postMessage('{"method":"unload"}','*');
         });
     }); 
+
     function validatePasscode(){
       // Fill Progress Bar on verification page
       $(".progress-meter").css({"width":"100%","transition":"4.7s"});
+      // Send to next screen after 5 seconds
       setTimeout(function(){
         location.href = '/home';
       },5000);
     }
+    // Only run function on login-validation page
     if (location.href.indexOf('login-validation') > -1) {
       validatePasscode();
     }
+    // Smothe scroll to documents section if first-time visitor
+    $("#first-time").click(function() {
+        $('html, body').animate({
+          scrollTop: $("#documents").offset().top
+        },750);
+    });
 
 	</script>
 
