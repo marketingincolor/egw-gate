@@ -9,9 +9,27 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 body { font-size:18px; line-height:1.4; }
 h1 { font-size: 2.5em; font-weight: bold; }
 p { line-height:inherit; }
-.footer { padding: 1.5em 0; }
-.footer h3 { font-size:0.75em; font-weight:normal; }
+.footer { padding: 1.5em 0;margin-top:50px }
+.footer p { font-size:0.75em; font-weight:normal; }
 .img-button { cursor:pointer; }
+.button a{
+  color: #FFF;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.button.choice {
+  width: 200px;
+  margin-top: 20px;
+}
+.button.choice:first-of-type{
+  margin-right: 20px;
+}
+.validation{
+  padding: 100px 0;
+}
+.validation h2{
+  margin-bottom: 30px;
+}
 
 /* LOCATION STYLING - DEFAULT */
 body.gateway { font-family: 'PT Sans', sans-serif; }
@@ -45,7 +63,7 @@ body.gateway .top-bar-right .menu{
   display: none;
 }
 #login-modal{
-  padding: 50px;
+  padding: 50px 50px 0;
   background-color: #e5e6e6;
 }
 #login-modal:focus{
@@ -89,15 +107,11 @@ body.fsres .header h1 { color:#fff; }
 body.fsres .content h1, h2, h3, h4, h5 { color:#0099d2; font-weight:bold; font-family: 'PT Sans', sans-serif; }
 body.fsres .content { /*background-color:#57595b; color:#fff;*/  margin-top:2.75em; }
 body.fsres .content img { width:100%; }
-body.fsres .footer { background-color:#333333; color:#fff; }
-body.fsres .footer h3 { color:#fff; }
 
 /* FSRES COMMUNITY HOME PAGE */
 body.fsres .community { background-color: #ecfaff;padding: 5% 0; }
 body.fsres .community h1{ font-size: 2.25rem;margin-bottom: 30px }
 body.fsres .community img{ margin-bottom: 30px }
-body.fsres .community .button{ width: 200px; }
-body.fsres .community .button:first-of-type{ margin-right: 20px; }
 body.fsres .community a { color: #FFF;font-weight: 600;line-height: 1.3; }
 
 /* LOCATION STYLING - CASTLE GROUP */
@@ -126,6 +140,9 @@ body.cgroup .footer h3 { color:#fff; }
   }
   body.fsres .community h1{
     font-size: 1.875rem;
+  }
+  .validation{
+    padding: 50px 0;
   }
 }
 
