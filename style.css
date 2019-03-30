@@ -30,6 +30,16 @@ p { line-height:inherit; }
 .validation h2{
   margin-bottom: 30px;
 }
+#video-modal{
+  top: 60px !important;
+  padding: 50px 50px 0;
+}
+#video-modal .lead{
+  margin-bottom: 0;
+}
+#video-modal:focus{
+  outline: none;
+}
 
 /* LOCATION STYLING - DEFAULT */
 body.gateway { font-family: 'PT Sans', sans-serif; }
@@ -62,11 +72,11 @@ body.gateway .statement span { font-size:16px; }
 body.gateway .top-bar-right .menu{
   display: none;
 }
-#login-modal{
+#login-modal,#form-modal{
   padding: 50px 50px 0;
   background-color: #e5e6e6;
 }
-#login-modal:focus{
+#login-modal:focus,#form-modal:focus{
   outline: none;
 }
 #login-modal p{
@@ -78,35 +88,33 @@ body.gateway .top-bar-right .menu{
   font-weight: 400;
   margin-bottom: 20px;
 }
-#login-modal input[type=text]{
+#login-modal input[type=text],#form-modal input[type=text]{
   width: 70%;
   display: inline-block;
   height: 41px;
 }
-#login-modal input[type=submit]{
+#login-modal input[type=submit],#form-modal input[type=submit]{
   width: 30%;
   display: inline-block;
   margin: 0;
 }
-#login-modal #error{
-  font-size: 0.875rem;
-  color: red;
-  display: none;
+#form-modal{
+  top: 50px !important;
 }
 
 /* LOCATION STYLING - FIRST SERVICE RESIDENTIAL */
 
-.top-bar.fsres{
+.top-bar.loggedin{
   background-color: #FFF;
   
 }
-body.fsres { font-family: 'PT Sans', sans-serif; }
-body.fsres .header { background-color:#57595b; border-bottom: 10px solid #0099d2; }
-body.fsres .header img { padding:1em 0; }
-body.fsres .header h1 { color:#fff; }
-body.fsres .content h1, h2, h3, h4, h5 { color:#0099d2; font-weight:bold; font-family: 'PT Sans', sans-serif; }
-body.fsres .content { /*background-color:#57595b; color:#fff;*/  margin-top:2.75em; }
-body.fsres .content img { width:100%; }
+body.loggedin { font-family: 'PT Sans', sans-serif; }
+body.loggedin .header { background-color:#57595b; border-bottom: 10px solid #0099d2; }
+body.loggedin .header img { padding:1em 0; }
+body.loggedin .header h1 { color:#fff; }
+body.loggedin .content h1, h2, h3, h4, h5 { color:#0099d2; font-weight:bold; font-family: 'PT Sans', sans-serif; }
+body.loggedin .content { /*background-color:#57595b; color:#fff;*/  margin-top:2.75em; }
+body.loggedin .content img { width:100%; }
 
 /* FSRES COMMUNITY HOME PAGE */
 .community,.devices,.documents,.meet-jaime{ padding: 5% 0; }
@@ -135,13 +143,13 @@ body.cgroup .footer h3 { color:#fff; }
 
 @media(max-width: 640px){
   
-  #login-modal{
+  #login-modal,#form-modal{
     padding: 50px 20px;
   }
-  body.fsres .community .button:first-of-type{
+  body.loggedin .community .button:first-of-type{
     margin-right: 0;
   }
-  body.fsres .community h1{
+  body.loggedin .community h1{
     font-size: 1.875rem;
   }
   .validation{

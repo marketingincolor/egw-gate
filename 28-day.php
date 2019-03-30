@@ -4,6 +4,7 @@
  * should route based off that to the appropriate section/location.
  *
  */ 
+include './components/sharpspring-checker.php';
 include './components/keycheck.php'; 
 // REQUIRED FOR ALL LOCATION VARIABLE CONTENT 
 if( !in_array($savedKey, $passKeys) ) { header('Location: ./products'); }
@@ -11,11 +12,10 @@ if( !in_array($savedKey, $passKeys) ) { header('Location: ./products'); }
 // Connects display page to proper CSV file
 $fileHandle = fopen('./28-day.csv', 'r');
 
-include './components/contentchooser.php'; 
-
-// $pageTitle = '28 Day Challenge - '.$locationTitle;
+$body_class = "loggedin";
+include 'header.php';
 ?>
-<?php include 'header.php';?>
+
 
   <section class="community">
     <div class="grid-container">
@@ -37,35 +37,28 @@ include './components/contentchooser.php';
           <div class="grid-x grid-padding-x medium-up-2 large-up-3" data-equalizer data-equalize>
     
           <?php if ($fileHandle != FALSE) { ?> 
-          <?php $rowCount = 0; while (($row = fgetcsv($fileHandle, 0, ',')) !==FALSE ) {  $rowCount++; ?>
-            <div class="cell">
-              <div class="card" data-equalizer-watch>
-                <div class="card-section">
-                <?php if ($row[1] != '') { ?>
-                  <button class="img-button" data-open="itemModal<?php echo $rowCount; ?>" style="margin-bottom:20px"><img src="./images/<?php echo $row[2]; ?>"></button>
-                <?php } else { ?>
-                  <img src="./images/<?php echo $row[2]; ?>" style="margin-bottom:20px">
-                <?php } ?> 
-                  <h4><?php echo $row[0]; ?></h4>
-    
-                <?php if ($row[1] != '') { ?>
-                  <p style="margin-top:20px"><button class="button" data-open="itemModal<?php echo $rowCount; ?>">Watch Video</button></p>
-                <?php } else { ?>
-                  <p>&nbsp;</p>
-                <?php } ?> 
+            <?php $rowCount = 0; while (($row = fgetcsv($fileHandle, 0, ',')) !==FALSE ) {  $rowCount++; ?>
+              <div class="cell">
+                <div class="card" data-equalizer-watch>
+                  <div class="card-section">
+                  <?php if ($row[1] != '') { ?>
+                    <button class="img-button" data-title="<?php echo $row[0]; ?>" data-video="<?php echo $row[1]; ?>" data-open="video-modal" style="margin-bottom:20px"><img src="./images/<?php echo $row[2]; ?>"></button>
+                  <?php } else { ?>
+                    <img src="./images/<?php echo $row[2]; ?>" style="margin-bottom:20px">
+                  <?php } ?> 
+                    <h4><?php echo $row[0]; ?></h4>
+      
+                  <?php if ($row[1] != '') { ?>
+                    <p style="margin-top:20px"><button class="button" data-title="<?php echo $row[0]; ?>" data-video="<?php echo $row[1]; ?>" data-open="video-modal">Watch Video</button></p>
+                  <?php } else { ?>
+                    <p>&nbsp;</p>
+                  <?php } ?> 
+                  </div>
                 </div>
               </div>
-            </div>
-    
-            <div class="reveal" id="itemModal<?php echo $rowCount; ?>" data-reveal>
-              <p class="lead"><?php echo $row[0]; ?></p>
-              <div class="responsive-embed"><iframe class="video-player" src="<?php echo $row[1]; ?>" width="320" height="240" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-              <button class="close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-          <?php } ?>
-          <?php } ?>
+
+            <?php } //endwhile ?>
+          <?php } //endif ?>
     
           </div>
         </div>
@@ -80,5 +73,13 @@ include './components/contentchooser.php';
       </div>
     </div>
   </section>
+
+  <div class="reveal" id="video-modal" data-reveal>
+    <p id="video-title" class="lead"></p>
+    <div class="responsive-embed"><iframe id="video-url" class="video-player" src="" width="320" height="240" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
 
 <?php include 'footer.php';?>

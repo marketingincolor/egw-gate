@@ -4,6 +4,7 @@
  * should route based off that to the appropriate section/location.
  *
  */ 
+include './components/sharpspring-checker.php';
 include './components/keycheck.php'; 
 // REQUIRED FOR ALL LOCATION VARIABLE CONTENT 
 if( !in_array($savedKey, $passKeys) ) { header('Location: ./products'); }
@@ -11,14 +12,8 @@ if( !in_array($savedKey, $passKeys) ) { header('Location: ./products'); }
 // Connects display page to proper CSV file
 $fileHandle = fopen('./baila.csv', 'r');
 
-if($is_fsr) {
-	include './components/contentchooser-fsr.php'; 
-} elseif($is_cg) {
-	include './components/contentchooser-cg.php'; 
-} else {
-	include './components/contentchooser.php'; 
-}
-$pageTitle = 'Baila! - '.$locationTitle;
+$body_class = "loggedin";
+include 'header.php';
 ?>
 <?php include 'header.php';?>
 	<div class="grid-container content">
