@@ -4,6 +4,7 @@
  *
  */
 ?>
+
 	<div class="grid-container fluid footer">
 		<div class="grid-x">
 			<div class="cell text-center">
@@ -19,11 +20,21 @@
   </script>
 
 	<script>
-    $(".close-button").click(function() { 
-        $('.video-player').each(function(index) {
-            $(this)[0].contentWindow.postMessage('{"method":"unload"}','*');
-        });
-    }); 
+    $('.cell').find('button').click(function(){
+      var title = $(this).data('title');
+      var video = $(this).data('video');
+
+      $('#video-modal').foundation('open');
+
+      $('#video-modal').on('open.zf.reveal',function(){
+        $(this).find('#video-title').text(title);
+        $(this).find('#video-url').attr('src',video);
+      });
+
+      $('#video-modal').on('closed.zf.reveal',function(){
+        $(this).find('#video-url').attr('src','');
+      });
+    });
 
     function validatePasscode(){
       // Fill Progress Bar on verification page

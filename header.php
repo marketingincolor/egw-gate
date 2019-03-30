@@ -15,8 +15,25 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0-rc.2/dist/css/foundation.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 		<link rel="stylesheet" href="style.css">
+    <!-- SS DEV SITE TRACKING - app.myegw.com -->
+    <?php // include './components/sharpspring-checker.php'; ?>
+    <script type="text/javascript">
+        var _ss = _ss || [];
+        _ss.push(['_setDomain', 'https://koi-3QNIOMOC0E.marketingautomation.services/net']);
+        _ss.push(['_setAccount', 'KOI-43TS5FVUQ0']);
+        _ss.push(['_trackPageView']);
+    (function() {
+        var ss = document.createElement('script');
+        ss.type = 'text/javascript'; ss.async = true;
+        ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'koi-3QNIOMOC0E.marketingautomation.services/client/ss.js?ver=1.1.1';
+        var scr = document.getElementsByTagName('script')[0];
+        scr.parentNode.insertBefore(ss, scr);
+    })();
+    </script>
+
+    <!-- End SS DEV SITE TRACKING -->
 	</head>
-	<body class="<?php echo $master; ?>">
+	<body class="<?php echo $body_class; ?>">
     
     <div class="top-bar-container">
       <div class="grid-container">

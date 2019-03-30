@@ -1,4 +1,5 @@
 <?php $logoPath = './images/fsr-logo-horizontal.png'; ?>
+<?php $body_class = 'gateway'; ?>
 <?php include 'header.php';?>
 
 <section class="validation">
