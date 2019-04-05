@@ -6,11 +6,9 @@
   <div class="grid-container">
     <div class="grid-x">
       <div class="small-10 small-offset-1 medium-8 medium-offset-2 cell text-center">
-        <h2>Please wait while we <br class="show-for-large">verify your passcode.</h2>
-        <p>You will be redirected automatically.</p>
-        <div class="progress" role="progressbar" tabindex="0" aria-valuenow="0" aria-valuemin="0" aria-valuetext="0 percent" aria-valuemax="100">
-          <div class="progress-meter" style="width: 0%"></div>
-        </div>
+        <i class="far fa-check-circle" style="font-size:7rem;margin-bottom:30px;color:#1779ba"></i>
+        <h1>Thank you!</h1>
+        <h3>Please check your email for your welcome message and instructions.</h3>
       </div>
     </div>
   </div>

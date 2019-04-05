@@ -17,13 +17,6 @@ p { line-height:inherit; }
   font-weight: 600;
   line-height: 1.3;
 }
-.button.choice {
-  width: 200px;
-  margin-top: 20px;
-}
-.button.choice:first-of-type{
-  margin-right: 20px;
-}
 .validation{
   padding: 100px 0;
 }
@@ -98,6 +91,9 @@ body.gateway .top-bar-right .menu{
   display: inline-block;
   margin: 0;
 }
+#login-modal iframe{
+  height: 360px;
+}
 #form-modal{
   top: 50px !important;
 }
@@ -106,7 +102,17 @@ body.gateway .top-bar-right .menu{
 
 .top-bar.loggedin{
   background-color: #FFF;
-  
+}
+body.loggedin .btn-container{
+  display: flex;
+}
+.button.choice {
+  flex-grow: 1;
+  margin-top: 20px;
+  font-size: 1.125rem;
+}
+.button.choice:first-of-type{
+  margin-right: 20px;
 }
 body.loggedin { font-family: 'PT Sans', sans-serif; }
 body.loggedin .header { background-color:#57595b; border-bottom: 10px solid #0099d2; }
@@ -115,6 +121,8 @@ body.loggedin .header h1 { color:#fff; }
 body.loggedin .content h1, h2, h3, h4, h5 { color:#0099d2; font-weight:bold; font-family: 'PT Sans', sans-serif; }
 body.loggedin .content { /*background-color:#57595b; color:#fff;*/  margin-top:2.75em; }
 body.loggedin .content img { width:100%; }
+body.loggedin .documents h3{ margin-bottom:40px; }
+body.loggedin .documents a{ font-weight: 700; }
 
 /* FSRES COMMUNITY HOME PAGE */
 .community,.devices,.documents,.meet-jaime{ padding: 5% 0; }
@@ -125,16 +133,10 @@ body.loggedin .content img { width:100%; }
 
 .documents{ background-color: #eaeaea; }
 
-/* LOCATION STYLING - CASTLE GROUP */
-body.cgroup { font-family: 'Open Sans', sans-serif;  }
-body.cgroup .header { background-color:#57595b; border-bottom: 10px solid #a5803f; }
-body.cgroup .header img { padding:1em 0; }
-body.cgroup .header h1 { color:#fff; }
-body.cgroup .content h1, h2, h3, h4, h5 { color:#a5803f; font-weight:bold; font-family: 'Open Sans', sans-serif; }
-body.cgroup .content { /*background-color:#57595b; color:#fff;*/  margin-top:2.75em; }
-body.cgroup .content img { width:100%; }
-body.cgroup .footer { background-color:#333333; color:#fff; }
-body.cgroup .footer h3 { color:#fff; }
+.videos .video-container .cell:last-of-type .card{ border: 0; }
+html.is-reveal-open {
+  position: static;
+}
 
 /* RESPONSIVE STYLES */
 @media(max-width: 1024px){
@@ -142,7 +144,10 @@ body.cgroup .footer h3 { color:#fff; }
 }
 
 @media(max-width: 640px){
-  
+
+  body.gateway .welcome{
+    padding-top: 30px;
+  }
   #login-modal,#form-modal{
     padding: 50px 20px;
   }
@@ -152,8 +157,23 @@ body.cgroup .footer h3 { color:#fff; }
   body.loggedin .community h1{
     font-size: 1.875rem;
   }
+  body.loggedin .btn-container{
+    flex-wrap: wrap;
+  }
+  .button.choice{
+    flex-basis: 100%;
+  }
   .validation{
     padding: 50px 0;
+  }
+  .top-bar-left,.top-bar-right{
+    text-align: center;
+  }
+  .top-bar-left .menu{
+    display: inline-block;
+  }
+  .top-bar-right .menu{
+    display: inline-flex;
   }
 }
 

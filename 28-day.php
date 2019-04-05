@@ -5,9 +5,7 @@
  *
  */ 
 include './components/sharpspring-checker.php';
-include './components/keycheck.php'; 
-// REQUIRED FOR ALL LOCATION VARIABLE CONTENT 
-if( !in_array($savedKey, $passKeys) ) { header('Location: ./products'); }
+include './components/contentchooser.php';
 
 // Connects display page to proper CSV file
 $fileHandle = fopen('./28-day.csv', 'r');
@@ -34,7 +32,7 @@ include 'header.php';
     <div class="grid-container content">
       <div class="grid-y grid-x">
         <div class="cell">
-          <div class="grid-x grid-padding-x medium-up-2 large-up-3" data-equalizer data-equalize>
+          <div class="grid-x grid-padding-x medium-up-2 large-up-3 video-container" data-equalizer data-equalize>
     
           <?php if ($fileHandle != FALSE) { ?> 
             <?php $rowCount = 0; while (($row = fgetcsv($fileHandle, 0, ',')) !==FALSE ) {  $rowCount++; ?>
@@ -82,4 +80,10 @@ include 'header.php';
     </button>
   </div>
 
+
 <?php include 'footer.php';?>
+  <script>
+    $('button').on('click',function(){
+      $(this).focus();
+    });
+  </script>

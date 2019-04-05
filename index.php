@@ -4,25 +4,7 @@
  * should route based off that to the appropriate section/location.
  *
  */
-include './components/keycheck.php'; 
-// REQUIRED FOR ALL LOCATION VARIABLE CONTENT 
-
-
-// if( $_POST ) {
-//   $userKey = $_POST["passcode"];
-//  if ( ( $userKey == $savedKey ) ||  ( in_array($userKey, $passKeys) )  ) {
-//     echo "Setting gatekey = {$userKey} for new user";
-//    setcookie("gatekey", $userKey, 2147483647);
-//    include './components/key-router.php';
-//  } else {
-//     echo "hello"
-//    header('Location: ./firstserviceresidential');
-//  }
-// }
-
-include './components/key-router.php';
-// REQUIRED FOR ALL LOCATION VARIABLE CONTENT 
-$pageTitle = 'Home | First Service Residential';
+$pageTitle = 'Lifestyle Programs | First Service Residential';
 $logoPath = './images/fsr-logo-horizontal.png';
 $body_class = 'gateway';
 include './components/sharpspring-checker.php';
@@ -43,7 +25,7 @@ include './components/sharpspring-checker.php';
 
   <!-- Login Modal -->
   <div class="reveal" id="login-modal" data-reveal>
-    <h4>Please enter your information and <?php echo $company; ?> passcode.</h4>
+    <h4>Please enter your information and <?php echo $company; ?> passphrase.</h4>
     <p class="description"><strong>Disclaimer:</strong> Evergreen Wellness, producer of the video content that follows, does not provide health care or give health care advice. The video content is for your information or entertainment purposes only and it is not meant to be relied on as medical advice, diagnosis, or treatment. Consult your physician before starting any exercise or program or taking any other action respecting your health. And, of course, if you experience any sort of urgent health care need, do not seek guidance on this site, but immediately call 911.</p>
     <p><strong>Important:</strong> By entering your information, you acknowledge that you have read and understand the above disclaimer.</p>
     <!-- SharpSpring Form for Login Form  -->

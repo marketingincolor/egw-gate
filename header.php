@@ -12,7 +12,7 @@
 		<title><?php echo $pageTitle; ?></title>
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0-rc.2/dist/css/foundation.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/css/foundation.min.css" integrity="sha256-xpOKVlYXzQ3P03j397+jWFZLMBXLES3IiryeClgU5og= sha384-gP4DhqyoT9b1vaikoHi9XQ8If7UNLO73JFOOlQV1RATrA7D0O7TjJZifac6NwPps sha512-AKwIib1E+xDeXe0tCgbc9uSvPwVYl6Awj7xl0FoaPFostZHOuDQ1abnDNCYtxL/HWEnVOMrFyf91TDgLPi9pNg==" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 		<link rel="stylesheet" href="style.css">
     <!-- SS DEV SITE TRACKING - app.myegw.com -->
@@ -34,6 +34,14 @@
     <!-- End SS DEV SITE TRACKING -->
 	</head>
 	<body class="<?php echo $body_class; ?>">
+
+    <?php
+      if (strpos($body_class, 'loggedin') !== false){
+        $home_link = '/home';
+      }else{
+        $home_link = '/';
+      }
+    ?>
     
     <div class="top-bar-container">
       <div class="grid-container">
@@ -42,13 +50,13 @@
             <div class="top-bar fsres" style="background-color: #FFF">
               <div class="top-bar-left">
                 <ul class="menu">
-                  <li class="menu-text"><img src="<?php echo $logoPath; ?>" style="max-width:175px"></li>
+                  <li class="menu-text"><a href="<?php echo $home_link; ?>"><img src="images/fsr-logo-horizontal.png" style="max-width:175px"></a></li>
                 </ul>
               </div>
               <div class="top-bar-right">
                 <ul class="menu">
-                  <li><a href="#"><i class="fas fa-home"></i> &nbsp;Home</a></li>
-                  <li><a href="#"><i class="fas fa-book-open"></i> &nbsp;About</a></li>
+                  <li><a href="/home"><i class="fas fa-home"></i> &nbsp;Home</a></li>
+                  <li><a href="/about"><i class="fas fa-book-open"></i> &nbsp;About</a></li>
                 </ul>
               </div>
             </div>
