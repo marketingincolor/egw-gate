@@ -5,7 +5,7 @@
 include './components/keycheck.php';
 
 include './components/contentchooser.php';
-$body_class = "loggedin help";
+$body_class = "loggedin privacy";
 include 'header.php';
 
 ?>
@@ -14,12 +14,10 @@ include 'header.php';
     <div class="grid-container">
       <div class="grid-x">
         <div class="small-10 small-offset-1 cell text-center">
-          <h1 style="margin-bottom:40px">How to Make a Video Play Full-Screen</h1>
-          <a href="/28-day.php">« Go Back</a>
+          <h1 style="margin-bottom:40px">Privacy Policy</h1>
         </div>
         <div class="small-10 small-offset-1 cell">
-          <p>To enlarge a video to full-screen on any device, simply click the symbol indicated by the arrow. To close the full-screen view, click the same symbol again.</p>
-          <img src="images/full-screen-button.png" alt="Vimeo Full Screen Instructions">
+          <p>content here</p>
         </div>
       </div>
     </div>

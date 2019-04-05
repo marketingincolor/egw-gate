@@ -32,7 +32,7 @@ include 'header.php';
     <div class="grid-container">
       <div class="grid-x grid-margin-x grid-margin-y align-middle">
         <div class="small-offset-1 small-10 medium-5 cell">
-          <h4>All of our video content can be watched on any computer, tablet, or smartphone, for you to enjoy in the comfort and privacy of your home.</h4>
+          <h4>All of our video content can be watched on any computer, tablet, or smartphone for you to enjoy in the comfort and privacy of your home.</h4>
         </div>
         <div class="small-offset-1 small-10 medium-5 medium-offset-0 cell text-center">
           <img src="images/devices.png" alt="Available on Desktop tablet and mobile">
@@ -46,7 +46,7 @@ include 'header.php';
       <div class="grid-x">
         <div class="small-10 small-offset-1 large-8 large-offset-2 cell">
           <h3 class="text-center">Please download and read through these documents before you begin the program!</h3>
-          <p>The 28-Day Challenge is an exercise and healthy eating program designed to help you lose one size in 28 days. Please click on the following five links.</p>
+          <p>The 28-Day Challenge is an exercise and healthy eating program designed to help you lose one size in 28 days. Please click on the following five links:</p>
           <ul>
             <li><a target="_blank" href="https://koi-3qniomoc0e.marketingautomation.services/net/m?md=XTVA9eBfLs668zuE5qD7JyUqJVPLY%2BKT">Getting Started ≫</a></li>
             <li><a target="_blank" href="https://koi-3qniomoc0e.marketingautomation.services/net/m?md=47Ag89%2BI5v99og%2F72iCKfn3iSfSx7IZV">Healthy Meal Options ≫</a></li>

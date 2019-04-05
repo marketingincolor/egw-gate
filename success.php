@@ -5,7 +5,7 @@
 <section class="validation">
   <div class="grid-container">
     <div class="grid-x">
-      <div class="small-10 small-offset-1 medium-8 medium-offset-2 cell text-center">
+      <div class="small-10 small-offset-1 medium-8 medium-offset-2 large-6 large-offset-3 cell text-center">
         <i class="far fa-check-circle" style="font-size:7rem;margin-bottom:30px;color:#1779ba"></i>
         <h1>Thank you!</h1>
         <h3>Please check your email for your welcome message and instructions.</h3>

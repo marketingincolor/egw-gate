@@ -103,17 +103,6 @@ body.gateway .top-bar-right .menu{
 .top-bar.loggedin{
   background-color: #FFF;
 }
-body.loggedin .btn-container{
-  display: flex;
-}
-.button.choice {
-  flex-grow: 1;
-  margin-top: 20px;
-  font-size: 1.125rem;
-}
-.button.choice:first-of-type{
-  margin-right: 20px;
-}
 body.loggedin { font-family: 'PT Sans', sans-serif; }
 body.loggedin .header { background-color:#57595b; border-bottom: 10px solid #0099d2; }
 body.loggedin .header img { padding:1em 0; }
@@ -125,6 +114,22 @@ body.loggedin .documents h3{ margin-bottom:40px; }
 body.loggedin .documents a{ font-weight: 700; }
 
 /* FSRES COMMUNITY HOME PAGE */
+body.home p, body.home a{
+  font-size: 1.25rem;
+}
+body.loggedin .btn-container{
+  display: flex;
+}
+body.home .button.choice {
+  flex-grow: 1;
+  margin-top: 20px;
+}
+body.home .button.choice a{
+  font-size: 1.5rem;
+}
+body.home .button.choice:first-of-type{
+  margin-right: 20px;
+}
 .community,.devices,.documents,.meet-jaime{ padding: 5% 0; }
 .community { background-color: #ecfaff; }
 .community h1{ font-size: 2.25rem;margin-bottom: 30px }
@@ -139,6 +144,22 @@ html.is-reveal-open {
 }
 .privacy address{
   font-style: normal;
+}
+
+/* Videos Page */
+body.videos .full-screen{
+  margin-bottom: 30px;
+}
+body.videos .full-screen a{
+  font-size: 1.25rem;
+  color: #666;
+  border-bottom: 1px solid #666;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+body.videos .full-screen a:hover{
+  color: #333;
+  border-color: #333;
 }
 
 /* RESPONSIVE STYLES */
@@ -163,7 +184,7 @@ html.is-reveal-open {
   body.loggedin .btn-container{
     flex-wrap: wrap;
   }
-  .button.choice{
+  body.home .button.choice{
     flex-basis: 100%;
   }
   .validation{

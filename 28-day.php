@@ -10,7 +10,7 @@ include './components/contentchooser.php';
 // Connects display page to proper CSV file
 $fileHandle = fopen('./28-day.csv', 'r');
 
-$body_class = "loggedin";
+$body_class = "loggedin videos";
 include 'header.php';
 ?>
 
@@ -75,6 +75,7 @@ include 'header.php';
   <div class="reveal" id="video-modal" data-reveal>
     <p id="video-title" class="lead"></p>
     <div class="responsive-embed"><iframe id="video-url" class="video-player" src="" width="320" height="240" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+    <p class="full-screen text-center"><a href="/full-screen">How to make the video play full screen ≫</a></p>
     <button class="close-button" data-close aria-label="Close modal" type="button">
       <span aria-hidden="true">&times;</span>
     </button>
