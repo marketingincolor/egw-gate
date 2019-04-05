@@ -14,7 +14,7 @@ include 'header.php';
     <div class="grid-container">
       <div class="grid-x">
         <div class="small-10 small-offset-1 cell text-center">
-          <h1 style="margin-bottom:40px">Terms of use</h1>
+          <h1 style="margin-bottom:40px">Terms of Use</h1>
         </div>
         <div class="small-10 small-offset-1 cell">
           <p>LEGAL NOTICE: EVERGREEN WELLNESS PROVIDES THIS SITE AND RELATED SERVICES SUBJECT TO YOUR COMPLIANCE WITH THE TERMS AND CONDITIONS SET FORTH BELOW. PLEASE READ THE FOLLOWING INFORMATION CAREFULLY: Copyright 2016 Evergreen Wellness, LLC. All Rights Reserved.</p>
