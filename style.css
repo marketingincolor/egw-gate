@@ -137,6 +137,9 @@ body.loggedin .documents a{ font-weight: 700; }
 html.is-reveal-open {
   position: static;
 }
+.privacy address{
+  font-style: normal;
+}
 
 /* RESPONSIVE STYLES */
 @media(max-width: 1024px){
