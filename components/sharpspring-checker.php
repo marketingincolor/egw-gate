@@ -1,3 +1,4 @@
+
 <script>
   var _ss = _ss || [];
   var __ss_noform = __ss_noform || [];
@@ -22,7 +23,10 @@
         }
       }
     }else{ // If ain't no contact at all
-      location.href = '/firstserviceresidential?loggedin=false'
+
+      if (location.pathname !== "/") {
+        location.href = '/?loggedin=false'
+      }
     }
   };
   _ss.push(['_setResponseCallback', callThisOnReturn]);

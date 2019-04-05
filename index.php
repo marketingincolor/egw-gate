@@ -4,54 +4,41 @@
  * should route based off that to the appropriate section/location.
  *
  */
-include './components/keycheck.php'; 
-// REQUIRED FOR ALL LOCATION VARIABLE CONTENT 
-if( in_array($savedKey, $passKeys) ) { header('Location: ./products'); }
-
-if( $_POST ) {
-    $userKey = $_POST["passcode"];
-	if ( ( $userKey == $savedKey ) ||  ( in_array($userKey, $passKeys) )  ) {
-		setcookie("gatekey", $userKey, 2147483647);
-		header('Location: ./products');
-	} else {
-		header('Location: ./');
-	}
-}
-// REQUIRED FOR ALL LOCATION VARIABLE CONTENT 
-include './components/contentchooser.php'; 
-$pageTitle = 'GateKeeper - Live Evergreen';
-$logoPath = './images/egw-logo-horizontal.png';
-//$request_uri = explode('?', $_SERVER['REQUEST_URI'], 2);
-//echo $request_uri[0];
-//var_dump($GLOBALS);
+$pageTitle = 'Lifestyle Programs | First Service Residential';
+$logoPath = './images/fsr-logo-horizontal.png';
+$body_class = 'gateway';
+include './components/sharpspring-checker.php';
 ?>
 <?php include 'header.php';?>
-	<div class="grid-container">
-		<div class="grid-x align-center-middle">
-			<div class="cell">
-				<div class="grid-x grid-padding-x">
-					<div class="cell small-10 small-offset-1 medium-6 medium-offset-3">&nbsp;</div>
-					<div class="cell small-10 small-offset-1 medium-6 medium-offset-3 text-center"><img src="<?php echo $logoPath; ?>"></div>
-					<div class="cell small-10 small-offset-1 medium-6 medium-offset-3">
-						<h3>Welcome to your Lifestyle Programs</h3>
-						<p class="description">Entering and submitting your <?php echo $company; ?> community passphrase in the field below is your acknowledgement that you’ve read, understand, and agree with the Terms of Use content shown below.</p>
-					</div>
-					<div class="cell small-10 small-offset-1 medium-6 medium-offset-3 text-center">
-				        <form action="" method="post">
-				            <input type="text" name="passcode" placeholder="Enter Passphrase" class="login">
-				            <a>I don't have a passphrase!</a><br><br clear="both">
-				            <input type="submit" class="button" name="SubmitButton">
-				            <br><br>
-				        </form>
-					</div>
-					<div class="cell small-10 small-offset-1 medium-6 medium-offset-3 text-center">
-						<h5 class="statement">Legal<br><span>(Please Scroll)</span></h5>
-						<div class="disclaimer">
-							<?php echo $siteDisclaimer; ?>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+
+  <section class="welcome">
+    <div class="grid-x align-middle">
+      <div class="cell small-10 small-offset-1 medium-6 medium-offset-0">
+        <h3 class="text-center">Welcome to your <br class="show-for-medium">Lifestyle Programs</h3>
+        <p class="text-center"><button class="button" data-open="login-modal">Get Started</button></p>
+      </div>
+      <div class="cell small-10 small-offset-1 medium-6 medium-offset-0 text-center">
+        <img src="images/fsr-people.png" alt="First Service Residential">
+      </div>
+    </div>
+  </section>
+
+  <!-- Login Modal -->
+  <div class="reveal" id="login-modal" data-reveal>
+    <h4>Please enter your information and <?php echo $company; ?> passphrase.</h4>
+    <p class="description"><strong>Disclaimer:</strong> Evergreen Wellness, producer of the video content that follows, does not provide health care or give health care advice. The video content is for your information or entertainment purposes only and it is not meant to be relied on as medical advice, diagnosis, or treatment. Consult your physician before starting any exercise or program or taking any other action respecting your health. And, of course, if you experience any sort of urgent health care need, do not seek guidance on this site, but immediately call 911.</p>
+    <p><strong>Important:</strong> By entering your information, you acknowledge that you have read and understand the above disclaimer.</p>
+    <!-- SharpSpring Form for Login Form  -->
+    <script type="text/javascript">
+        var ss_form = {'account': 'MzawMDE3NbQwBQA', 'formID': 'SzZNNUs0MUvSTUo0NdE1MbZI1U00NjbUNTE3MDZMTE5MSTYxAgA'};
+        ss_form.width = '100%';
+        ss_form.height = 'auto';
+        ss_form.domain = 'app-3QNIOMOC0E.marketingautomation.services';
+        // ss_form.hidden = {'Company': 'Anon'}; // Modify this for sending hidden variables, or overriding values
+    </script>
+    <script type="text/javascript" src="https://koi-3QNIOMOC0E.marketingautomation.services/client/form.js?ver=1.1.1"></script>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
 <?php include 'footer.php';?>
