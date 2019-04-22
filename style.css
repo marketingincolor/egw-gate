@@ -11,6 +11,7 @@ h1 { font-size: 2.5em; font-weight: bold; }
 p { line-height:inherit; }
 .footer { padding: 1.5em 0;margin-top:50px }
 .footer p { font-size:0.75em!important; font-weight:normal; }
+.footer a { font-size:1em !important; }
 .img-button { cursor:pointer; }
 .button a,.button{
   color: #FFF;
@@ -132,7 +133,7 @@ body.home .button.choice:first-of-type{
 }
 .community,.devices,.documents,.meet-jaime{ padding: 5% 0; }
 .community { background-color: #ecfaff; }
-.community h1{ font-size: 2.25rem;margin-bottom: 30px }
+.community h1{ font-size: 2.25rem;margin-bottom: 30px; font-family:inherit; }
 .community img{ margin-bottom: 30px }
 .community a { color: #FFF;font-weight: 600;line-height: 1.3; }
 

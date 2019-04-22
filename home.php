@@ -46,13 +46,20 @@ include 'header.php';
       <div class="grid-x">
         <div class="small-10 small-offset-1 large-8 large-offset-2 cell">
           <h3 class="text-center">Please download and read through these documents before you begin the program!</h3>
-          <p>The 28-Day Challenge is an exercise and healthy eating program designed to help you lose one size in 28 days. Please click on the following five links:</p>
+          <p>The 28-Day Size Down Challenge is an exercise and healthy eating program designed to help you lose one size in 28 days. Please click on the following five links:</p>
           <ul>
-            <li><a target="_blank" href="https://koi-3qniomoc0e.marketingautomation.services/net/m?md=XTVA9eBfLs668zuE5qD7JyUqJVPLY%2BKT">Getting Started ≫</a></li>
+
+            <li><a target="_blank" href="https://koi-3QMYANU21K.marketingautomation.services/net/m?md=kfI%2FiLYviiKyHpfbJAbyFaHaZ8hJ6tA%2F">Getting Started ≫</a></li>
+            <li><a target="_blank" href="https://koi-3QMYANU21K.marketingautomation.services/net/m?md=DzpJA2Db3QrFKcCKjnUOL%2BQ08v8akSI0">Healthy Meal Options ≫</a></li>
+            <li><a target="_blank" href="https://koi-3QMYANU21K.marketingautomation.services/net/m?md=XclRm4%2BgZtvwKF1DibiWer0e3VM%2F4EDJ">Grocery Shopping Options ≫</a></li>
+            <li><a target="_blank" href="https://koi-3QMYANU21K.marketingautomation.services/net/m?md=BMy1eHkIlp4cpP7UrAoW3g6trOmjnn%2BG">Self-Reflections ≫</a></li>
+            <li><a target="_blank" href="https://koi-3QMYANU21K.marketingautomation.services/net/m?md=SgxuHM70HyBHKQD%2FT6wO%2Fy6N8hPyYwMx">Tracking Calendar ≫</a></li>
+
+            <!-- <li><a target="_blank" href="https://koi-3qniomoc0e.marketingautomation.services/net/m?md=XTVA9eBfLs668zuE5qD7JyUqJVPLY%2BKT">Getting Started ≫</a></li>
             <li><a target="_blank" href="https://koi-3qniomoc0e.marketingautomation.services/net/m?md=47Ag89%2BI5v99og%2F72iCKfn3iSfSx7IZV">Healthy Meal Options ≫</a></li>
             <li><a target="_blank" href="https://koi-3qniomoc0e.marketingautomation.services/net/m?md=hEiF273JjoJnUxcY5YBIkt5e4Wdi4pnx">Grocery Shopping Options ≫</a></li>
             <li><a target="_blank" href="https://koi-3qniomoc0e.marketingautomation.services/net/m?md=IP%2FUV2%2F4fN%2FSRLNYiZh6%2FbIkA7bKikyg">Self-Reflections ≫</a></li>
-            <li><a target="_blank" href="https://koi-3qniomoc0e.marketingautomation.services/net/m?md=7IZgprTEcKZ4ST%2B3VGke8GHnz6jGoJmh">Tracking Calendar ≫</a></li>
+            <li><a target="_blank" href="https://koi-3qniomoc0e.marketingautomation.services/net/m?md=7IZgprTEcKZ4ST%2B3VGke8GHnz6jGoJmh">Tracking Calendar ≫</a></li> -->
           </ul>
           <p>Once you have reviewed these five documents, you're ready <a href="/28-day">to begin the challenge</a>!</p>
         </div>

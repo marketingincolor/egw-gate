@@ -20,9 +20,9 @@ include 'header.php';
       <div class="grid-x">
         <div class="small-10 small-offset-1 large-8 large-offset-2 cell">
           <h1 class="text-center">28-Day Size Down Challenge</h1>
-          <p>As you can see below, each week consists of five days of workouts followed by two days of rest &mdash; over the span of four weeks. Each day's workout takes just eight minutes. But if you want more of a challenge, feel free to repeat a workout in the same session. It's completely up to you, so just be sure to do what feels right. Similarly, be sure to modify and exercise to meet your own personal needs.</p>
-          <p>As Jaime loves to say, "<strong>Consistency beats intensity any day!</strong>"</p>
-          <p><em>Important: Jaime recommends that you warm up before each workout with the 2-minute daily warm-up video below.</em></p>
+          <p>As you can see below, each week of my program consists of five daily workouts followed by two days of rest &mdash; over the span of four weeks. Each day's workout takes just eight minutes. But if you want more of a challenge, feel free to repeat a workout in the same session. It's completely up to you, so just be sure to do what feels right. Similarly, be sure to modify and exercise to meet your own personal needs.</p>
+          <p>As I love to say, "<strong>Consistency beats intensity any day!</strong>"</p>
+          <p><em>Important: I recommend that you warm up before each workout with the 2-minute warmup video below.</em></p>
         </div>
       </div>
     </div>

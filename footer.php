@@ -8,7 +8,7 @@
 	<div class="grid-container fluid footer">
 		<div class="grid-x">
 			<div class="cell text-center">
-				<p>&copy <?php echo date('Y'); ?> Evergreen Wellness&reg; LLC | All Rights Reserved | <a href="/terms-of-use">Terms of Use</a> | <a href="/privacy-policy">Privacy Policy</a></p>
+				<p>&copy <?php echo date('Y'); ?> Evergreen Wellness&reg; LLC | All Rights Reserved | <a href="/terms-of-use">Terms of Use</a> | <a href="/privacy-policy">Privacy Policy</a> | <a href="mailto:support@myevergreenwellness.com?subject=28-Day Size Down Challenge Question">Help</a></p>
 			</div>
 		</div>
 	</div>

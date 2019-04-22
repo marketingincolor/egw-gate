@@ -3,11 +3,14 @@
   var _ss = _ss || [];
   var __ss_noform = __ss_noform || [];
   var callThisOnReturn = function(resp) {
+    console.log(resp.contact);
     if (resp && resp.contact) { // If dey be a contact
-      if (!resp.contact['In a Registered Community']) { // if not in a registered community
+      //if (!resp.contact['In a Registered Community']) { // if not in a registered community
+      if (resp.contact['In a Registered Community'] != 'Yes') { // if not in a registered community
         if($('body').hasClass('loggedin')){ // If not on Home Page
-          document.getElementById('code').innerText = '"'+resp.contact['Passcode']+'"';
-          $('#form-modal').foundation('open'); 
+          //document.getElementById('code').innerText = '"'+resp.contact['Passcode']+'"';
+          //$('#form-modal').foundation('open'); 
+          location.href = '/?loggedin=false';
         }
       }else{ // If in a registered community
         if($('body').hasClass('home')){ // If not on Index Page
@@ -45,10 +48,10 @@
   <h3>Sorry, the code <span><strong id="code"></strong></span> is invalid. Please reenter your code below.</h3>
   <!-- SharpSpring Form for Login Form  -->
   <script type="text/javascript">
-      var ss_form = {'account': 'MzawMDE3NbQwBQA', 'formID': 'SzZNNUs0MUvSTUo0NdE1MbZI1U00NjbUNTE3MDZMTE5MSTYxAgA'};
+      var ss_form = {'account': 'MzawMDG2NDQxAwA', 'formID': 'SzGyNEpLTDTVNUs0MdI1MU5K000ySDTXNTQ2MEs0NrW0NDc3AwA'};
       ss_form.width = '100%';
       ss_form.height = 'auto';
-      ss_form.domain = 'app-3QNIOMOC0E.marketingautomation.services';
+      ss_form.domain = 'app-3QMYANU21K.marketingautomation.services';
   </script>
-  <script type="text/javascript" src="https://koi-3QNIOMOC0E.marketingautomation.services/client/form.js?ver=1.1.1"></script>
+  <script type="text/javascript" src="https://koi-3QMYANU21K.marketingautomation.services/client/form.js?ver=1.1.1"></script>
 </div>
