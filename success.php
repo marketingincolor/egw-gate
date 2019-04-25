@@ -8,7 +8,7 @@
       <div class="small-10 small-offset-1 medium-8 medium-offset-2 cell text-center">
         <i class="far fa-check-circle" style="font-size:7rem;margin-bottom:30px;color:#1779ba"></i>
         <h1>Thank you!</h1>
-        <h3>Please Read before Continuing to the Program</h3>
+        <h3>Please Read This Page, Then Check Your Email</h3>
 		<p><i>Welcome to the 28-Day Challenge. After reading this page, please check your email for further instructions. Thank you!</i>
 </p>
 		<img src="images/thank-you-page.jpg" alt="Thank you and Welcome">
@@ -21,6 +21,7 @@
         <p style="text-align:left;">FirstService Residential has generously allowed me to come into your homes (via the web) for you to try my program and share your thoughts about it after you’ve completed it. Finding time to exercise is the number one reason people are unable to stick with a fitness program. You’re either too busy to exercise or perhaps uncomfortable spending time in a gym. If this describes you, this program is just what you've been looking for. Short, yet effective exercises you can do in the comfort of your home, at your own pace, and according to your schedule.</p>
         <p style="text-align:left;">Now, please check your email and follow the instructions in it. If you find the email in your junk or spam folder, please move it to your regular inbox, as I’ll be communicating with you from time to time throughout the program and would hate for those messages to get lost in your spam!</p>
         <p style="text-align:left;">Thank you so much for participating in the 28-Day Size Down Challenge - I hope you enjoy the program and stick with it! </p>
+        <h3>Now, please check your email for further instructions!</h3>
       </div>
     </div>
   </div>
