@@ -72,7 +72,7 @@ include 'header.php';
       <div class="grid-x grid-margin-x grid-margin-y align-middle">
         <div class="small-offset-1 small-10 medium-5 large-4 large-offset-2 cell">
           <h3>Meet Your Host, Celebrity Fitness Trainer Jaime Brenkus!</h3>
-          <p>Remember the "8 Minute Abs" craze of the 90s? Your host for this challenge is the man who started it all. Now in his late 50s, Jaime Brenkus is putting the boom back in Baby Boomers! While his collection of 8-minute workouts included in this program are designed for older adults, they are suitable for people of any age.</p>
+          <p>Remember the "8 Minute Abs" craze of the 90s? Your host for this challenge is the man who started it all. Now in his late 50s, Jaime Brenkus is putting the boom back in Baby Boomers! While his collection of 8-minute workouts included in this program are designed for older adults, they are suitable for people of any age. Even beginners!</p>
         </div>
         <div class="small-offset-1 small-10 medium-5 medium-offset-0 large-4 cell text-center" style="border: 2px solid #AAA;border-radius: 3px;">
           <img src="images/jaime-brenkus.png" alt="Jaime Brenkus">
